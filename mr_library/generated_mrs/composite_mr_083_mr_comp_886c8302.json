@@ -1,0 +1,36 @@
+{
+  "id": "mr_comp_886c8302",
+  "signature": "ChangeOptLevel(['levels']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+  "depth": 2,
+  "fitness": 0.4672,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.4891,
+    "unique_gates": 10,
+    "passed_benchmarks": 3,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.0465
+  },
+  "is_valid": true,
+  "generation": 5,
+  "genes": [
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "mr_id": "QdiffG7CCNOTDecomposition",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 83
+}

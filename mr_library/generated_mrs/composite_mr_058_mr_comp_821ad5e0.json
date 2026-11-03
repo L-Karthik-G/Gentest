@@ -1,0 +1,47 @@
+{
+  "id": "mr_comp_821ad5e0",
+  "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeOptLevel(['levels']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+  "depth": 3,
+  "fitness": 0.5117,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.6757,
+    "unique_gates": 8,
+    "passed_benchmarks": 1,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.0379
+  },
+  "is_valid": true,
+  "generation": 4,
+  "genes": [
+    {
+      "mr_id": "ChangeCouplingMap",
+      "params": {
+        "min_perc_nodes": 1,
+        "max_perc_nodes": 1.25,
+        "min_connection_density": 0.09,
+        "max_connection_density": 0.24,
+        "force_connected": true
+      }
+    },
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          3,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "mr_id": "QdiffG4ZtoSS",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 58
+}

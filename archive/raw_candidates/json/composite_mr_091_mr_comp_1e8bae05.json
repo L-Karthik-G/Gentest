@@ -1,0 +1,40 @@
+{
+  "id": "mr_comp_1e8bae05",
+  "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeOptLevel(['levels'])",
+  "depth": 2,
+  "fitness": 0.4405,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7366,
+    "unique_gates": 10,
+    "passed_benchmarks": 5,
+    "novelty": 0.0,
+    "diversity_bonus": 0.0254
+  },
+  "is_valid": true,
+  "generation": 5,
+  "genes": [
+    {
+      "mr_id": "ChangeCouplingMap",
+      "params": {
+        "min_perc_nodes": 1,
+        "max_perc_nodes": 1.55,
+        "min_connection_density": 0.07,
+        "max_connection_density": 0.19,
+        "force_connected": true
+      }
+    },
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          1,
+          0,
+          2
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 91
+}

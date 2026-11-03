@@ -1,0 +1,38 @@
+{
+  "id": "mr_comp_12b616e3",
+  "signature": "ChangeQubitOrder(['scramble_percentage']) -> ChangeBackend(['available_backends'])",
+  "depth": 2,
+  "fitness": 0.4408,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7391,
+    "unique_gates": 10,
+    "passed_benchmarks": 5,
+    "novelty": 0.0,
+    "diversity_bonus": 0.0242
+  },
+  "is_valid": true,
+  "generation": 2,
+  "genes": [
+    {
+      "mr_id": "ChangeQubitOrder",
+      "params": {
+        "scramble_percentage": 1.0
+      }
+    },
+    {
+      "mr_id": "ChangeBackend",
+      "params": {
+        "available_backends": [
+          "qasm_simulator",
+          "aer_simulator_matrix_product_state",
+          "aer_simulator",
+          "statevector_simulator",
+          "aer_simulator_statevector"
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 90
+}

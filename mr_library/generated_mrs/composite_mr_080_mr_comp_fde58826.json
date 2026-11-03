@@ -1,0 +1,33 @@
+{
+  "id": "mr_comp_fde58826",
+  "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+  "depth": 2,
+  "fitness": 0.4754,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.545,
+    "unique_gates": 12,
+    "passed_benchmarks": 3,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.0233
+  },
+  "is_valid": true,
+  "generation": 6,
+  "genes": [
+    {
+      "mr_id": "ChangeQubitOrder",
+      "params": {
+        "scramble_percentage": 0.75
+      }
+    },
+    {
+      "mr_id": "QdiffG7CCNOTDecomposition",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 80
+}

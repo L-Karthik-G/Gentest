@@ -1,0 +1,47 @@
+{
+  "id": "mr_comp_3a9efc2d",
+  "signature": "ChangeQubitOrder(['scramble_percentage']) -> ChangeOptLevel(['levels']) -> ChangeBackend(['available_backends'])",
+  "depth": 3,
+  "fitness": 0.5127,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7069,
+    "unique_gates": 9,
+    "passed_benchmarks": 5,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.0106
+  },
+  "is_valid": true,
+  "generation": 6,
+  "genes": [
+    {
+      "mr_id": "ChangeQubitOrder",
+      "params": {
+        "scramble_percentage": 0.5
+      }
+    },
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          0,
+          3,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "mr_id": "ChangeBackend",
+      "params": {
+        "available_backends": [
+          "aer_simulator_statevector",
+          "qasm_simulator",
+          "aer_simulator_matrix_product_state"
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 55
+}

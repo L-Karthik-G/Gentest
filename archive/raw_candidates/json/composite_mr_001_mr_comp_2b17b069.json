@@ -1,0 +1,40 @@
+{
+  "id": "mr_comp_2b17b069",
+  "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+  "depth": 2,
+  "fitness": 0.9348,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7391,
+    "unique_gates": 10,
+    "passed_benchmarks": 5,
+    "novelty": 1.0,
+    "diversity_bonus": 1.0
+  },
+  "is_valid": true,
+  "generation": 0,
+  "genes": [
+    {
+      "mr_id": "ChangeCouplingMap",
+      "params": {
+        "min_perc_nodes": 1,
+        "max_perc_nodes": 1.3,
+        "min_connection_density": 0.05,
+        "max_connection_density": 0.15,
+        "force_connected": true
+      }
+    },
+    {
+      "mr_id": "ChangeCouplingMap",
+      "params": {
+        "min_perc_nodes": 1,
+        "max_perc_nodes": 1.37,
+        "min_connection_density": 0.14,
+        "max_connection_density": 0.29,
+        "force_connected": true
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 1
+}

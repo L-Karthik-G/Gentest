@@ -1,0 +1,43 @@
+{
+  "id": "mr_comp_24938978",
+  "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeBackend(['available_backends'])",
+  "depth": 2,
+  "fitness": 0.9348,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7391,
+    "unique_gates": 10,
+    "passed_benchmarks": 5,
+    "novelty": 1.0,
+    "diversity_bonus": 1.0
+  },
+  "is_valid": true,
+  "generation": 0,
+  "genes": [
+    {
+      "mr_id": "ChangeCouplingMap",
+      "params": {
+        "min_perc_nodes": 1,
+        "max_perc_nodes": 1.49,
+        "min_connection_density": 0.09,
+        "max_connection_density": 0.28,
+        "force_connected": true
+      }
+    },
+    {
+      "mr_id": "ChangeBackend",
+      "params": {
+        "available_backends": [
+          "aer_simulator_matrix_product_state",
+          "aer_simulator",
+          "qasm_simulator",
+          "aer_simulator_density_matrix",
+          "statevector_simulator",
+          "aer_simulator_statevector"
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 3
+}

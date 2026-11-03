@@ -1,0 +1,33 @@
+{
+  "id": "mr_comp_e83a3f19",
+  "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+  "depth": 2,
+  "fitness": 0.5548,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7192,
+    "unique_gates": 10,
+    "passed_benchmarks": 3,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.1667
+  },
+  "is_valid": true,
+  "generation": 1,
+  "genes": [
+    {
+      "mr_id": "QdiffG3XToHSSH",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    },
+    {
+      "mr_id": "ChangeQubitOrder",
+      "params": {
+        "scramble_percentage": 0.75
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 39
+}

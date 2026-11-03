@@ -1,0 +1,46 @@
+{
+  "id": "mr_comp_c7149916",
+  "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeTargetBasis(['universal_gate_sets'])",
+  "depth": 2,
+  "fitness": 0.35,
+  "objectives": {
+    "coverage": 0.75,
+    "cost_efficiency": 0.5734,
+    "unique_gates": 6,
+    "passed_benchmarks": 5,
+    "novelty": 0.0,
+    "diversity_bonus": 0.0767
+  },
+  "is_valid": true,
+  "generation": 3,
+  "genes": [
+    {
+      "mr_id": "ChangeCouplingMap",
+      "params": {
+        "min_perc_nodes": 1,
+        "max_perc_nodes": 1.51,
+        "min_connection_density": 0.14,
+        "max_connection_density": 0.21,
+        "force_connected": true
+      }
+    },
+    {
+      "mr_id": "ChangeTargetBasis",
+      "params": {
+        "universal_gate_sets": [
+          {
+            "gates": [
+              "rx",
+              "ry",
+              "rz",
+              "p",
+              "cx"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 130
+}

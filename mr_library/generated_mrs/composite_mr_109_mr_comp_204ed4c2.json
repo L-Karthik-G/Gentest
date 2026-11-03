@@ -1,0 +1,36 @@
+{
+  "id": "mr_comp_204ed4c2",
+  "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeOptLevel(['levels'])",
+  "depth": 2,
+  "fitness": 0.4238,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.6757,
+    "unique_gates": 8,
+    "passed_benchmarks": 1,
+    "novelty": 0.0,
+    "diversity_bonus": 0.0194
+  },
+  "is_valid": true,
+  "generation": 6,
+  "genes": [
+    {
+      "mr_id": "QdiffG4ZtoSS",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    },
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          1,
+          0
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 109
+}

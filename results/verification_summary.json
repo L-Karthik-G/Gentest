@@ -1,0 +1,1091 @@
+{
+  "primitive_mrs_count": 17,
+  "primitive_results": [
+    {
+      "id": "AddUnusedRegister",
+      "description": "Appends an unused classical/quantum register to test circuit transpilation robustness against dead entities.",
+      "parameters": {
+        "min_n_bit": {
+          "type": "int",
+          "default": 1
+        },
+        "max_n_bit": {
+          "type": "int",
+          "default": 10
+        },
+        "reg_types": {
+          "type": "list",
+          "default": [
+            "QuantumRegister"
+          ]
+        },
+        "after_sections": {
+          "type": "list",
+          "default": [
+            "CIRCUIT",
+            "MEASURE"
+          ]
+        }
+      },
+      "applied_on_ghz": false,
+      "mqt_cc_compiled": false,
+      "error": "precondition_failed"
+    },
+    {
+      "id": "ChangeBackend",
+      "description": "Switches the simulation backend engine (e.g., statevector, density matrix, matrix product state).",
+      "parameters": {
+        "available_backends": {
+          "type": "list",
+          "default": [
+            "aer_simulator",
+            "aer_simulator_statevector",
+            "statevector_simulator",
+            "aer_simulator_density_matrix",
+            "aer_simulator_matrix_product_state",
+            "qasm_simulator"
+          ]
+        }
+      },
+      "applied_on_ghz": true,
+      "mqt_cc_compiled": true,
+      "error": ""
+    },
+    {
+      "id": "ChangeCouplingMap",
+      "description": "Synthesizes or alters the hardware coupling topology graph and retranspiles the circuit.",
+      "parameters": {
+        "min_perc_nodes": {
+          "type": "int",
+          "default": 1
+        },
+        "max_perc_nodes": {
+          "type": "float",
+          "default": 1.5
+        },
+        "min_connection_density": {
+          "type": "float",
+          "default": 0.05
+        },
+        "max_connection_density": {
+          "type": "float",
+          "default": 0.2
+        },
+        "force_connected": {
+          "type": "bool",
+          "default": true
+        }
+      },
+      "applied_on_ghz": true,
+      "mqt_cc_compiled": true,
+      "error": ""
+    },
+    {
+      "id": "ChangeOptLevel",
+      "description": "Modifies compiler optimization levels (0, 1, 2, 3) to test compilation invariance under varying passes.",
+      "parameters": {
+        "levels": {
+          "type": "list",
+          "default": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "applied_on_ghz": true,
+      "mqt_cc_compiled": true,
+      "error": ""
+    },
+    {
+      "id": "ChangeQubitOrder",
+      "description": "Permutes qubit indices and rewrites register indexing, preserving semantic quantum state.",
+      "parameters": {
+        "scramble_percentage": {
+          "type": "int",
+          "default": 1
+        }
+      },
+      "applied_on_ghz": true,
+      "mqt_cc_compiled": true,
+      "error": ""
+    },
+    {
+      "id": "ChangeTargetBasis",
+      "description": "Re-synthesizes circuit into distinct universal gate sets (e.g. Clifford+T, Rx/Ry/Rz/CX, CCX/H).",
+      "parameters": {
+        "universal_gate_sets": {
+          "type": "list",
+          "default": [
+            {
+              "gates": [
+                "rx",
+                "ry",
+                "rz",
+                "p",
+                "cx"
+              ]
+            },
+            {
+              "gates": [
+                "cx",
+                "h",
+                "s",
+                "t"
+              ]
+            },
+            {
+              "gates": [
+                "ccx",
+                "h"
+              ]
+            }
+          ]
+        }
+      },
+      "applied_on_ghz": true,
+      "mqt_cc_compiled": true,
+      "error": ""
+    },
+    {
+      "id": "InjectNullEffect",
+      "description": "Injects reversible or identity-equivalent gate sequences (null-effect subcircuits).",
+      "parameters": {
+        "min_n_ops": {
+          "type": "int",
+          "default": 0
+        },
+        "max_n_ops": {
+          "type": "int",
+          "default": 10
+        },
+        "fuzzer_object": {
+          "type": "str",
+          "default": "QiskitFuzzer"
+        },
+        "gate_set": {
+          "type": "list",
+          "default": [
+            {
+              "name": "C3XGate",
+              "n_bits": 4,
+              "n_params": 1,
+              "shortname": "mcx"
+            },
+            {
+              "name": "C4XGate",
+              "n_bits": 5,
+              "n_params": 0,
+              "shortname": "mcx"
+            },
+            {
+              "name": "CCXGate",
+              "n_bits": 3,
+              "n_params": 0,
+              "shortname": "ccx"
+            },
+            {
+              "name": "DCXGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "dcx"
+            },
+            {
+              "name": "CHGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "ch"
+            },
+            {
+              "name": "CPhaseGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "cp"
+            },
+            {
+              "name": "CRXGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "crx"
+            },
+            {
+              "name": "CRYGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "cry"
+            },
+            {
+              "name": "CRZGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "crz"
+            },
+            {
+              "name": "CSwapGate",
+              "n_bits": 3,
+              "n_params": 0,
+              "shortname": "cswap"
+            },
+            {
+              "name": "CSXGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "csx"
+            },
+            {
+              "name": "CUGate",
+              "n_bits": 2,
+              "n_params": 4,
+              "shortname": "cu"
+            },
+            {
+              "name": "CU1Gate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "cu1"
+            },
+            {
+              "name": "CU3Gate",
+              "n_bits": 2,
+              "n_params": 3,
+              "shortname": "cu3"
+            },
+            {
+              "name": "CXGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "cx"
+            },
+            {
+              "name": "CYGate",
+              "n_bits": 2,
+              "n_params": 0
+            },
+            {
+              "name": "CZGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "cz"
+            },
+            {
+              "name": "HGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "h"
+            },
+            {
+              "name": "IGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "id"
+            },
+            {
+              "name": "PhaseGate",
+              "n_bits": 1,
+              "n_params": 1,
+              "shortname": "p"
+            },
+            {
+              "name": "RCCXGate",
+              "n_bits": 3,
+              "n_params": 0,
+              "shortname": "rccx"
+            },
+            {
+              "name": "RC3XGate",
+              "n_bits": 4,
+              "n_params": 0,
+              "shortname": "rcccx"
+            },
+            {
+              "name": "RXGate",
+              "n_bits": 1,
+              "n_params": 1,
+              "shortname": "rx"
+            },
+            {
+              "name": "RXXGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "rxx"
+            },
+            {
+              "name": "RYGate",
+              "n_bits": 1,
+              "n_params": 1,
+              "shortname": "ry"
+            },
+            {
+              "name": "RYYGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "ryy"
+            },
+            {
+              "name": "RZGate",
+              "n_bits": 1,
+              "n_params": 1,
+              "shortname": "rz"
+            },
+            {
+              "name": "RZZGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "rzz"
+            },
+            {
+              "name": "RZXGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "rzx"
+            },
+            {
+              "name": "ECRGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "ecr"
+            },
+            {
+              "name": "SGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "s"
+            },
+            {
+              "name": "SdgGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "sdg"
+            },
+            {
+              "name": "SwapGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "swap"
+            },
+            {
+              "name": "iSwapGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "iswap"
+            },
+            {
+              "name": "SXGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "sx"
+            },
+            {
+              "name": "SXdgGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "sxdg"
+            },
+            {
+              "name": "TGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "t"
+            },
+            {
+              "name": "TdgGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "tdg"
+            },
+            {
+              "name": "UGate",
+              "n_bits": 1,
+              "n_params": 3,
+              "shortname": "u"
+            },
+            {
+              "name": "U1Gate",
+              "n_bits": 1,
+              "n_params": 1,
+              "shortname": "u1"
+            },
+            {
+              "name": "U2Gate",
+              "n_bits": 1,
+              "n_params": 2,
+              "shortname": "u2"
+            },
+            {
+              "name": "U3Gate",
+              "n_bits": 1,
+              "n_params": 3,
+              "shortname": "u3"
+            },
+            {
+              "name": "XGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "x"
+            },
+            {
+              "name": "YGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "y"
+            },
+            {
+              "name": "ZGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "z"
+            }
+          ]
+        }
+      },
+      "applied_on_ghz": true,
+      "mqt_cc_compiled": false,
+      "error": "\"non-unitary subroutine calls are not yet supported, but received 'Instruction(name='subcircuit', num_qubits=3, num_clbits=3, params=[])'\""
+    },
+    {
+      "id": "InjectParameters",
+      "description": "Substitutes concrete rotation gate angles with parametric expressions and binds values dynamically.",
+      "parameters": {
+        "min_n_params": {
+          "type": "int",
+          "default": 1
+        },
+        "max_n_params": {
+          "type": "NoneType",
+          "default": null
+        }
+      },
+      "applied_on_ghz": false,
+      "mqt_cc_compiled": false,
+      "error": "precondition_failed"
+    },
+    {
+      "id": "RunIndependentPartitions",
+      "description": "Partitions separable subcircuits, evaluates independently, and takes tensor/cartesian product.",
+      "parameters": {
+        "n_partitions": {
+          "type": "int",
+          "default": 2
+        }
+      },
+      "applied_on_ghz": false,
+      "mqt_cc_compiled": false,
+      "error": "precondition_failed"
+    },
+    {
+      "id": "ToQasmAndBack",
+      "description": "Serializes circuit to OpenQASM intermediate representation and reconstructs back.",
+      "parameters": {
+        "qasm_version": {
+          "type": "int",
+          "default": 2
+        },
+        "before_sections": {
+          "type": "list",
+          "default": [
+            "OPTIMIZATION_LEVEL",
+            "EXECUTION"
+          ]
+        }
+      },
+      "applied_on_ghz": false,
+      "mqt_cc_compiled": false,
+      "error": "precondition_failed"
+    },
+    {
+      "id": "QdiffG1SwapToCnot",
+      "description": "QDiff Rule 1: Replaces SWAP gates with 3 alternating CNOT gates (and vice-versa).",
+      "parameters": {
+        "min_to_change": {
+          "type": "int",
+          "default": 1
+        },
+        "max_to_change": {
+          "type": "int",
+          "default": 1
+        }
+      },
+      "applied_on_ghz": true,
+      "mqt_cc_compiled": true,
+      "error": ""
+    },
+    {
+      "id": "QdiffG2TwoHToId",
+      "description": "QDiff Rule 2: Cancels or injects consecutive Hadamard (H * H = I) gate pairs.",
+      "parameters": {
+        "add_identity_matrix": {
+          "type": "bool",
+          "default": true
+        }
+      },
+      "applied_on_ghz": true,
+      "mqt_cc_compiled": true,
+      "error": ""
+    },
+    {
+      "id": "QdiffG3XToHSSH",
+      "description": "QDiff Rule 3: Decomposes Pauli-X into H-S-S-H sequence.",
+      "parameters": {
+        "min_to_change": {
+          "type": "int",
+          "default": 1
+        },
+        "max_to_change": {
+          "type": "int",
+          "default": 1
+        }
+      },
+      "applied_on_ghz": true,
+      "mqt_cc_compiled": true,
+      "error": ""
+    },
+    {
+      "id": "QdiffG4ZtoSS",
+      "description": "QDiff Rule 4: Decomposes Pauli-Z into two Phase (S * S) gates.",
+      "parameters": {
+        "min_to_change": {
+          "type": "int",
+          "default": 1
+        },
+        "max_to_change": {
+          "type": "int",
+          "default": 1
+        }
+      },
+      "applied_on_ghz": true,
+      "mqt_cc_compiled": true,
+      "error": ""
+    },
+    {
+      "id": "QdiffG5CZtoHCnotH",
+      "description": "QDiff Rule 5: Rewrites Controlled-Z (CZ) into H-CNOT-H.",
+      "parameters": {
+        "min_to_change": {
+          "type": "int",
+          "default": 1
+        },
+        "max_to_change": {
+          "type": "int",
+          "default": 1
+        }
+      },
+      "applied_on_ghz": true,
+      "mqt_cc_compiled": true,
+      "error": ""
+    },
+    {
+      "id": "QdiffG6TwoCzToId",
+      "description": "QDiff Rule 6: Eliminates or injects adjacent self-inverse Controlled-Z gates (CZ * CZ = I).",
+      "parameters": {
+        "add_identity_matrix": {
+          "type": "bool",
+          "default": true
+        }
+      },
+      "applied_on_ghz": false,
+      "mqt_cc_compiled": false,
+      "error": "precondition_failed"
+    },
+    {
+      "id": "QdiffG7CCNOTDecomposition",
+      "description": "QDiff Rule 7: Decomposes Toffoli (CCNOT) into single-qubit gates and CNOTs.",
+      "parameters": {
+        "min_to_change": {
+          "type": "int",
+          "default": 1
+        },
+        "max_to_change": {
+          "type": "int",
+          "default": 1
+        }
+      },
+      "applied_on_ghz": true,
+      "mqt_cc_compiled": true,
+      "error": ""
+    }
+  ],
+  "composite_mrs_count": 158,
+  "top_composite_samples": [
+    {
+      "index": 1,
+      "id": "mr_comp_d0feffc8",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeBackend(['available_backends'])",
+      "depth": 3,
+      "fitness": 0.9026,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 1.0,
+        "cost_efficiency": 0.7353,
+        "diversity_bonus": 1.0,
+        "num_ops": 9,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 2,
+      "id": "mr_comp_97d00357",
+      "signature": "QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> QdiffG2TwoHToId(['add_identity_matrix'])",
+      "depth": 2,
+      "fitness": 0.8611,
+      "objectives": {
+        "coverage": 0.75,
+        "novelty": 1.0,
+        "cost_efficiency": 0.6944,
+        "diversity_bonus": 1.0,
+        "num_ops": 11,
+        "unique_gates": 6
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 3,
+      "id": "mr_comp_e7df4f96",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 2,
+      "fitness": 0.7359,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.7353,
+        "diversity_bonus": 0.6667,
+        "num_ops": 9,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 4,
+      "id": "mr_comp_3a65b396",
+      "signature": "QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.727,
+      "objectives": {
+        "coverage": 0.75,
+        "novelty": 0.75,
+        "cost_efficiency": 0.6579,
+        "diversity_bonus": 0.75,
+        "num_ops": 13,
+        "unique_gates": 6
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 5,
+      "id": "mr_comp_e6d14950",
+      "signature": "ChangeOptLevel(['levels']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.6778,
+      "objectives": {
+        "coverage": 0.75,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.6944,
+        "diversity_bonus": 0.6,
+        "num_ops": 11,
+        "unique_gates": 6
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 6,
+      "id": "mr_comp_59413b77",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.6719,
+      "objectives": {
+        "coverage": 1.0,
+        "novelty": 0.5,
+        "cost_efficiency": 0.5208,
+        "diversity_bonus": 0.6667,
+        "num_ops": 23,
+        "unique_gates": 8
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 7,
+      "id": "mr_comp_19743343",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.6632,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.6944,
+        "diversity_bonus": 0.4167,
+        "num_ops": 11,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 8,
+      "id": "mr_comp_41b29585",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG2TwoHToId(['add_identity_matrix'])",
+      "depth": 2,
+      "fitness": 0.6526,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.7353,
+        "diversity_bonus": 0.3333,
+        "num_ops": 9,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 9,
+      "id": "mr_comp_ec895324",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.6319,
+      "objectives": {
+        "coverage": 0.75,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.6944,
+        "diversity_bonus": 0.4167,
+        "num_ops": 11,
+        "unique_gates": 6
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 10,
+      "id": "mr_comp_fa33be29",
+      "signature": "ChangeOptLevel(['levels']) -> QdiffG2TwoHToId(['add_identity_matrix'])",
+      "depth": 2,
+      "fitness": 0.6311,
+      "objectives": {
+        "coverage": 0.75,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.7576,
+        "diversity_bonus": 0.35,
+        "num_ops": 8,
+        "unique_gates": 6
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 11,
+      "id": "mr_comp_4e523275",
+      "signature": "ChangeOptLevel(['levels']) -> ChangeBackend(['available_backends'])",
+      "depth": 2,
+      "fitness": 0.6249,
+      "objectives": {
+        "coverage": 1.0,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.6944,
+        "diversity_bonus": 0.1385,
+        "num_ops": 11,
+        "unique_gates": 8
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 12,
+      "id": "mr_comp_fc92ecd8",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.6215,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.6944,
+        "diversity_bonus": 0.25,
+        "num_ops": 11,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 13,
+      "id": "mr_comp_28eb4eec",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG2TwoHToId(['add_identity_matrix']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.6206,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.7353,
+        "diversity_bonus": 0.2056,
+        "num_ops": 9,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 14,
+      "id": "mr_comp_280ec069",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeTargetBasis(['universal_gate_sets']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.6179,
+      "objectives": {
+        "coverage": 0.75,
+        "novelty": 0.75,
+        "cost_efficiency": 0.4717,
+        "diversity_bonus": 0.5,
+        "num_ops": 28,
+        "unique_gates": 6
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 15,
+      "id": "mr_comp_6a2e0a70",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.6081,
+      "objectives": {
+        "coverage": 1.0,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.5435,
+        "diversity_bonus": 0.2222,
+        "num_ops": 21,
+        "unique_gates": 8
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 16,
+      "id": "mr_comp_faba280e",
+      "signature": "QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> ChangeTargetBasis(['universal_gate_sets'])",
+      "depth": 2,
+      "fitness": 0.6066,
+      "objectives": {
+        "coverage": 0.625,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.3846,
+        "diversity_bonus": 0.75,
+        "num_ops": 40,
+        "unique_gates": 5
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 17,
+      "id": "mr_comp_7a9863b0",
+      "signature": "QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change']) -> ChangeBackend(['available_backends']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.6004,
+      "objectives": {
+        "coverage": 1.0,
+        "novelty": 0.5,
+        "cost_efficiency": 0.5208,
+        "diversity_bonus": 0.381,
+        "num_ops": 23,
+        "unique_gates": 8
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 18,
+      "id": "mr_comp_70a38943",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5942,
+      "objectives": {
+        "coverage": 1.0,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.5435,
+        "diversity_bonus": 0.1667,
+        "num_ops": 21,
+        "unique_gates": 8
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 19,
+      "id": "mr_comp_5a2ceb50",
+      "signature": "QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> ChangeBackend(['available_backends'])",
+      "depth": 2,
+      "fitness": 0.5903,
+      "objectives": {
+        "coverage": 0.75,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.6944,
+        "diversity_bonus": 0.25,
+        "num_ops": 11,
+        "unique_gates": 6
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 20,
+      "id": "mr_comp_4f5830d8",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.5896,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 0.5,
+        "cost_efficiency": 0.6944,
+        "diversity_bonus": 0.2889,
+        "num_ops": 11,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 21,
+      "id": "mr_comp_9065de2e",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.584,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.6944,
+        "diversity_bonus": 0.1,
+        "num_ops": 11,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 22,
+      "id": "mr_comp_d1441689",
+      "signature": "ChangeOptLevel(['levels']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 2,
+      "fitness": 0.5758,
+      "objectives": {
+        "coverage": 0.75,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.7576,
+        "diversity_bonus": 0.1288,
+        "num_ops": 8,
+        "unique_gates": 6
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 23,
+      "id": "mr_comp_fdc2c657",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> ChangeBackend(['available_backends']) -> ChangeBackend(['available_backends'])",
+      "depth": 3,
+      "fitness": 0.5752,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.7353,
+        "diversity_bonus": 0.024,
+        "num_ops": 9,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 24,
+      "id": "mr_comp_c488d95b",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5706,
+      "objectives": {
+        "coverage": 0.75,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.6944,
+        "diversity_bonus": 0.1714,
+        "num_ops": 11,
+        "unique_gates": 6
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 25,
+      "id": "mr_comp_c56d71a1",
+      "signature": "ChangeBackend(['available_backends']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.5442,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 0.3333,
+        "cost_efficiency": 0.7353,
+        "diversity_bonus": 0.2333,
+        "num_ops": 9,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 26,
+      "id": "mr_comp_d161d8ec",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.538,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 0.3333,
+        "cost_efficiency": 0.7353,
+        "diversity_bonus": 0.2083,
+        "num_ops": 9,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 27,
+      "id": "mr_comp_4a35d1bf",
+      "signature": "QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5353,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 0.6667,
+        "cost_efficiency": 0.5208,
+        "diversity_bonus": 0.0786,
+        "num_ops": 23,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 28,
+      "id": "mr_comp_98975fbc",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 2,
+      "fitness": 0.5344,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 0.5,
+        "cost_efficiency": 0.7353,
+        "diversity_bonus": 0.0274,
+        "num_ops": 9,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 29,
+      "id": "mr_comp_ef5cc93f",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 2,
+      "fitness": 0.5336,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 0.5,
+        "cost_efficiency": 0.7353,
+        "diversity_bonus": 0.024,
+        "num_ops": 9,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    },
+    {
+      "index": 30,
+      "id": "mr_comp_564909bb",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 2,
+      "fitness": 0.5335,
+      "objectives": {
+        "coverage": 0.875,
+        "novelty": 0.5,
+        "cost_efficiency": 0.7353,
+        "diversity_bonus": 0.0235,
+        "num_ops": 9,
+        "unique_gates": 7
+      },
+      "mqt_cc_compiled": true
+    }
+  ]
+}

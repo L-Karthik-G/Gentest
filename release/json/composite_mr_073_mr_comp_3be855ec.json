@@ -1,0 +1,33 @@
+{
+  "id": "mr_comp_3be855ec",
+  "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+  "depth": 2,
+  "fitness": 0.4833,
+  "objectives": {
+    "coverage": 0.75,
+    "cost_efficiency": 0.6944,
+    "unique_gates": 6,
+    "passed_benchmarks": 1,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.1556
+  },
+  "is_valid": true,
+  "generation": 1,
+  "genes": [
+    {
+      "mr_id": "QdiffG2TwoHToId",
+      "params": {
+        "add_identity_matrix": true
+      }
+    },
+    {
+      "mr_id": "QdiffG1SwapToCnot",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 73
+}

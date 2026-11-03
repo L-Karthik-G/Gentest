@@ -1,0 +1,44 @@
+{
+  "id": "mr_comp_6fc6b65f",
+  "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> ChangeOptLevel(['levels']) -> ChangeQubitOrder(['scramble_percentage'])",
+  "depth": 3,
+  "fitness": 0.4995,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.6254,
+    "unique_gates": 9,
+    "passed_benchmarks": 3,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.0394
+  },
+  "is_valid": true,
+  "generation": 4,
+  "genes": [
+    {
+      "mr_id": "QdiffG3XToHSSH",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    },
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          0,
+          3,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "mr_id": "ChangeQubitOrder",
+      "params": {
+        "scramble_percentage": 0.5
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 63
+}

@@ -1,0 +1,42 @@
+{
+  "id": "mr_comp_48c9adae",
+  "signature": "ChangeBackend(['available_backends']) -> ChangeOptLevel(['levels'])",
+  "depth": 2,
+  "fitness": 0.4301,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7069,
+    "unique_gates": 9,
+    "passed_benchmarks": 5,
+    "novelty": 0.0,
+    "diversity_bonus": 0.0134
+  },
+  "is_valid": true,
+  "generation": 6,
+  "genes": [
+    {
+      "mr_id": "ChangeBackend",
+      "params": {
+        "available_backends": [
+          "aer_simulator_statevector",
+          "aer_simulator_matrix_product_state",
+          "aer_simulator_density_matrix",
+          "statevector_simulator",
+          "qasm_simulator",
+          "aer_simulator"
+        ]
+      }
+    },
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 105
+}

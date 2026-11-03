@@ -1,0 +1,50 @@
+{
+  "id": "mr_comp_20ec857b",
+  "signature": "QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change']) -> ChangeTargetBasis(['universal_gate_sets'])",
+  "depth": 3,
+  "fitness": 0.7867,
+  "objectives": {
+    "coverage": 0.75,
+    "cost_efficiency": 0.3968,
+    "unique_gates": 6,
+    "passed_benchmarks": 1,
+    "novelty": 1.0,
+    "diversity_bonus": 1.0
+  },
+  "is_valid": true,
+  "generation": 0,
+  "genes": [
+    {
+      "mr_id": "QdiffG7CCNOTDecomposition",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    },
+    {
+      "mr_id": "QdiffG7CCNOTDecomposition",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    },
+    {
+      "mr_id": "ChangeTargetBasis",
+      "params": {
+        "universal_gate_sets": [
+          {
+            "gates": [
+              "rx",
+              "ry",
+              "rz",
+              "p",
+              "cx"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 22
+}

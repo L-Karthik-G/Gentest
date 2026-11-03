@@ -1,0 +1,52 @@
+{
+  "id": "mr_comp_410214db",
+  "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeTargetBasis(['universal_gate_sets']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+  "depth": 3,
+  "fitness": 0.3452,
+  "objectives": {
+    "coverage": 0.625,
+    "cost_efficiency": 0.3846,
+    "unique_gates": 5,
+    "passed_benchmarks": 1,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.0379
+  },
+  "is_valid": true,
+  "generation": 4,
+  "genes": [
+    {
+      "mr_id": "QdiffG4ZtoSS",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    },
+    {
+      "mr_id": "ChangeTargetBasis",
+      "params": {
+        "universal_gate_sets": [
+          {
+            "gates": [
+              "cx",
+              "h",
+              "s",
+              "t"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "mr_id": "ChangeCouplingMap",
+      "params": {
+        "min_perc_nodes": 1,
+        "max_perc_nodes": 1.37,
+        "min_connection_density": 0.14,
+        "max_connection_density": 0.29,
+        "force_connected": true
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 131
+}

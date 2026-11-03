@@ -1,0 +1,18 @@
+OPENQASM 3.0;
+include "stdgates.inc";
+bit[4] cr;
+h $0;
+p(pi/2) $1;
+cx $0, $1;
+h $1;
+cx $1, $2;
+h $2;
+cx $2, $3;
+cx $1, $2;
+cx $2, $1;
+cx $1, $2;
+h $3;
+cr[0] = measure $0;
+cr[1] = measure $1;
+cr[2] = measure $2;
+cr[3] = measure $3;

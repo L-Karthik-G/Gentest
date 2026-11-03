@@ -1,0 +1,626 @@
+{
+  "version": "2.0",
+  "total_mrs": 17,
+  "morphrelations": [
+    {
+      "id": "AddUnusedRegister",
+      "module_path": "lib.mr.add_unused_register",
+      "class_name": "AddUnusedRegister",
+      "description": "Appends an unused classical/quantum register to test circuit transpilation robustness against dead entities.",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "min_n_bit": {
+          "type": "int",
+          "default": 1
+        },
+        "max_n_bit": {
+          "type": "int",
+          "default": 10
+        },
+        "reg_types": {
+          "type": "list",
+          "default": [
+            "QuantumRegister"
+          ]
+        },
+        "after_sections": {
+          "type": "list",
+          "default": [
+            "CIRCUIT",
+            "MEASURE"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ChangeBackend",
+      "module_path": "lib.mr.change_backend",
+      "class_name": "ChangeBackend",
+      "description": "Switches the simulation backend engine (e.g., statevector, density matrix, matrix product state).",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "available_backends": {
+          "type": "list",
+          "default": [
+            "aer_simulator",
+            "aer_simulator_statevector",
+            "statevector_simulator",
+            "aer_simulator_density_matrix",
+            "aer_simulator_matrix_product_state",
+            "qasm_simulator"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ChangeCouplingMap",
+      "module_path": "lib.mr.change_coupling_map",
+      "class_name": "ChangeCouplingMap",
+      "description": "Synthesizes or alters the hardware coupling topology graph and retranspiles the circuit.",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "min_perc_nodes": {
+          "type": "int",
+          "default": 1
+        },
+        "max_perc_nodes": {
+          "type": "float",
+          "default": 1.5
+        },
+        "min_connection_density": {
+          "type": "float",
+          "default": 0.05
+        },
+        "max_connection_density": {
+          "type": "float",
+          "default": 0.2
+        },
+        "force_connected": {
+          "type": "bool",
+          "default": true
+        }
+      }
+    },
+    {
+      "id": "ChangeOptLevel",
+      "module_path": "lib.mr.change_opt_level",
+      "class_name": "ChangeOptLevel",
+      "description": "Modifies compiler optimization levels (0, 1, 2, 3) to test compilation invariance under varying passes.",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "levels": {
+          "type": "list",
+          "default": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    },
+    {
+      "id": "ChangeQubitOrder",
+      "module_path": "lib.mr.change_qubit_order",
+      "class_name": "ChangeQubitOrder",
+      "description": "Permutes qubit indices and rewrites register indexing. Semantic equivalence holds under bitstring permutation pi(y).",
+      "semantic_equivalent": false,
+      "oracle_type": "PERMUTED_EQUIVALENT",
+      "parameters": {
+        "scramble_percentage": {
+          "type": "int",
+          "default": 1
+        }
+      }
+    },
+    {
+      "id": "ChangeTargetBasis",
+      "module_path": "lib.mr.change_target_basis",
+      "class_name": "ChangeTargetBasis",
+      "description": "Re-synthesizes circuit into distinct universal gate sets (e.g. Clifford+T, Rx/Ry/Rz/CX, CCX/H).",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "universal_gate_sets": {
+          "type": "list",
+          "default": [
+            {
+              "gates": [
+                "rx",
+                "ry",
+                "rz",
+                "p",
+                "cx"
+              ]
+            },
+            {
+              "gates": [
+                "cx",
+                "h",
+                "s",
+                "t"
+              ]
+            },
+            {
+              "gates": [
+                "ccx",
+                "h"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "InjectNullEffect",
+      "module_path": "lib.mr.inject_null_effect",
+      "class_name": "InjectNullEffect",
+      "description": "Injects reversible or identity-equivalent gate sequences (null-effect subcircuits).",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "min_n_ops": {
+          "type": "int",
+          "default": 0
+        },
+        "max_n_ops": {
+          "type": "int",
+          "default": 10
+        },
+        "fuzzer_object": {
+          "type": "str",
+          "default": "QiskitFuzzer"
+        },
+        "gate_set": {
+          "type": "list",
+          "default": [
+            {
+              "name": "C3XGate",
+              "n_bits": 4,
+              "n_params": 1,
+              "shortname": "mcx"
+            },
+            {
+              "name": "C4XGate",
+              "n_bits": 5,
+              "n_params": 0,
+              "shortname": "mcx"
+            },
+            {
+              "name": "CCXGate",
+              "n_bits": 3,
+              "n_params": 0,
+              "shortname": "ccx"
+            },
+            {
+              "name": "DCXGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "dcx"
+            },
+            {
+              "name": "CHGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "ch"
+            },
+            {
+              "name": "CPhaseGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "cp"
+            },
+            {
+              "name": "CRXGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "crx"
+            },
+            {
+              "name": "CRYGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "cry"
+            },
+            {
+              "name": "CRZGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "crz"
+            },
+            {
+              "name": "CSwapGate",
+              "n_bits": 3,
+              "n_params": 0,
+              "shortname": "cswap"
+            },
+            {
+              "name": "CSXGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "csx"
+            },
+            {
+              "name": "CUGate",
+              "n_bits": 2,
+              "n_params": 4,
+              "shortname": "cu"
+            },
+            {
+              "name": "CU1Gate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "cu1"
+            },
+            {
+              "name": "CU3Gate",
+              "n_bits": 2,
+              "n_params": 3,
+              "shortname": "cu3"
+            },
+            {
+              "name": "CXGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "cx"
+            },
+            {
+              "name": "CYGate",
+              "n_bits": 2,
+              "n_params": 0
+            },
+            {
+              "name": "CZGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "cz"
+            },
+            {
+              "name": "HGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "h"
+            },
+            {
+              "name": "IGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "id"
+            },
+            {
+              "name": "PhaseGate",
+              "n_bits": 1,
+              "n_params": 1,
+              "shortname": "p"
+            },
+            {
+              "name": "RCCXGate",
+              "n_bits": 3,
+              "n_params": 0,
+              "shortname": "rccx"
+            },
+            {
+              "name": "RC3XGate",
+              "n_bits": 4,
+              "n_params": 0,
+              "shortname": "rcccx"
+            },
+            {
+              "name": "RXGate",
+              "n_bits": 1,
+              "n_params": 1,
+              "shortname": "rx"
+            },
+            {
+              "name": "RXXGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "rxx"
+            },
+            {
+              "name": "RYGate",
+              "n_bits": 1,
+              "n_params": 1,
+              "shortname": "ry"
+            },
+            {
+              "name": "RYYGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "ryy"
+            },
+            {
+              "name": "RZGate",
+              "n_bits": 1,
+              "n_params": 1,
+              "shortname": "rz"
+            },
+            {
+              "name": "RZZGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "rzz"
+            },
+            {
+              "name": "RZXGate",
+              "n_bits": 2,
+              "n_params": 1,
+              "shortname": "rzx"
+            },
+            {
+              "name": "ECRGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "ecr"
+            },
+            {
+              "name": "SGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "s"
+            },
+            {
+              "name": "SdgGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "sdg"
+            },
+            {
+              "name": "SwapGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "swap"
+            },
+            {
+              "name": "iSwapGate",
+              "n_bits": 2,
+              "n_params": 0,
+              "shortname": "iswap"
+            },
+            {
+              "name": "SXGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "sx"
+            },
+            {
+              "name": "SXdgGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "sxdg"
+            },
+            {
+              "name": "TGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "t"
+            },
+            {
+              "name": "TdgGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "tdg"
+            },
+            {
+              "name": "UGate",
+              "n_bits": 1,
+              "n_params": 3,
+              "shortname": "u"
+            },
+            {
+              "name": "U1Gate",
+              "n_bits": 1,
+              "n_params": 1,
+              "shortname": "u1"
+            },
+            {
+              "name": "U2Gate",
+              "n_bits": 1,
+              "n_params": 2,
+              "shortname": "u2"
+            },
+            {
+              "name": "U3Gate",
+              "n_bits": 1,
+              "n_params": 3,
+              "shortname": "u3"
+            },
+            {
+              "name": "XGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "x"
+            },
+            {
+              "name": "YGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "y"
+            },
+            {
+              "name": "ZGate",
+              "n_bits": 1,
+              "n_params": 0,
+              "shortname": "z"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "InjectParameters",
+      "module_path": "lib.mr.inject_parameters",
+      "class_name": "InjectParameters",
+      "description": "Substitutes concrete rotation gate angles with parametric expressions and binds values dynamically.",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "min_n_params": {
+          "type": "int",
+          "default": 1
+        },
+        "max_n_params": {
+          "type": "NoneType",
+          "default": null
+        }
+      }
+    },
+    {
+      "id": "RunIndependentPartitions",
+      "module_path": "lib.mr.run_independent_partitions",
+      "class_name": "RunIndependentPartitions",
+      "description": "Partitions separable subcircuits, evaluates independently, and takes tensor/cartesian product.",
+      "semantic_equivalent": false,
+      "oracle_type": "PARTITIONED_EQUIVALENT",
+      "parameters": {
+        "n_partitions": {
+          "type": "int",
+          "default": 2
+        }
+      }
+    },
+    {
+      "id": "ToQasmAndBack",
+      "module_path": "lib.mr.to_qasm_and_back",
+      "class_name": "ToQasmAndBack",
+      "description": "Serializes circuit to OpenQASM intermediate representation and reconstructs back.",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "qasm_version": {
+          "type": "int",
+          "default": 2
+        },
+        "before_sections": {
+          "type": "list",
+          "default": [
+            "OPTIMIZATION_LEVEL",
+            "EXECUTION"
+          ]
+        }
+      }
+    },
+    {
+      "id": "QdiffG1SwapToCnot",
+      "module_path": "lib.mr.qdiff_g1_swap_to_cnot",
+      "class_name": "QdiffG1SwapToCnot",
+      "description": "QDiff Rule 1: Replaces SWAP gates with 3 alternating CNOT gates (SWAP(a,b) = CX(a,b)CX(b,a)CX(a,b)).",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "min_to_change": {
+          "type": "int",
+          "default": 1
+        },
+        "max_to_change": {
+          "type": "int",
+          "default": 1
+        }
+      }
+    },
+    {
+      "id": "QdiffG2TwoHToId",
+      "module_path": "lib.mr.qdiff_g2_two_h_to_id",
+      "class_name": "QdiffG2TwoHToId",
+      "description": "QDiff Rule 2: Cancels or injects consecutive Hadamard (H * H = I) gate pairs.",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "add_identity_matrix": {
+          "type": "bool",
+          "default": true
+        }
+      }
+    },
+    {
+      "id": "QdiffG3XToHSSH",
+      "module_path": "lib.mr.qdiff_g3_x_to_hssh",
+      "class_name": "QdiffG3XToHSSH",
+      "description": "QDiff Rule 3: Decomposes Pauli-X into H-S-S-H sequence.",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "min_to_change": {
+          "type": "int",
+          "default": 1
+        },
+        "max_to_change": {
+          "type": "int",
+          "default": 1
+        }
+      }
+    },
+    {
+      "id": "QdiffG4ZtoSS",
+      "module_path": "lib.mr.qdiff_g4_z_to_ss",
+      "class_name": "QdiffG4ZtoSS",
+      "description": "QDiff Rule 4: Decomposes Pauli-Z into two Phase (S * S) gates.",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "min_to_change": {
+          "type": "int",
+          "default": 1
+        },
+        "max_to_change": {
+          "type": "int",
+          "default": 1
+        }
+      }
+    },
+    {
+      "id": "QdiffG5CZtoHCnotH",
+      "module_path": "lib.mr.qdiff_g5_cz_to_h_cnot_h",
+      "class_name": "QdiffG5CZtoHCnotH",
+      "description": "QDiff Rule 5: Rewrites Controlled-Z (CZ) into H-CNOT-H.",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "min_to_change": {
+          "type": "int",
+          "default": 1
+        },
+        "max_to_change": {
+          "type": "int",
+          "default": 1
+        }
+      }
+    },
+    {
+      "id": "QdiffG6TwoCzToId",
+      "module_path": "lib.mr.qdiff_g6_two_cz_to_id",
+      "class_name": "QdiffG6TwoCzToId",
+      "description": "QDiff Rule 6: Eliminates or injects adjacent self-inverse Controlled-Z gates (CZ * CZ = I).",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "add_identity_matrix": {
+          "type": "bool",
+          "default": true
+        }
+      }
+    },
+    {
+      "id": "QdiffG7CCNOTDecomposition",
+      "module_path": "lib.mr.qdiff_g7_ccnot_decomposition",
+      "class_name": "QdiffG7CCNOTDecomposition",
+      "description": "QDiff Rule 7: Decomposes Toffoli (CCNOT) into single-qubit gates and CNOTs.",
+      "semantic_equivalent": true,
+      "oracle_type": "DIRECT_EQUIVALENT",
+      "parameters": {
+        "min_to_change": {
+          "type": "int",
+          "default": 1
+        },
+        "max_to_change": {
+          "type": "int",
+          "default": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "execution_timestamp": "2026-11-02T16:32:46Z",
+  "random_seed": 42,
+  "environment": {
+    "python_version": "3.12.13 (main, Jun 23 2026, 15:18:55) [Clang 22.1.3 ]",
+    "qiskit_version": "2.6.1",
+    "mqt_core_version": "4.1.1"
+  },
+  "ga_parameters": {
+    "population_size": 80,
+    "max_generations": 10,
+    "tournament_size": 4,
+    "elitism_count": 4,
+    "mutation_rate": 0.25,
+    "depth_range": [
+      2,
+      3
+    ],
+    "stagnation_patience": 8
+  },
+  "results_summary": {
+    "unique_valid_relations": 131,
+    "best_fitness": 0.9348
+  }
+}

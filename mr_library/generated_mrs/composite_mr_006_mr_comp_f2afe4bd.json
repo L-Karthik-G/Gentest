@@ -1,0 +1,39 @@
+{
+  "id": "mr_comp_f2afe4bd",
+  "signature": "ChangeBackend(['available_backends']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+  "depth": 2,
+  "fitness": 0.9149,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.6597,
+    "unique_gates": 8,
+    "passed_benchmarks": 2,
+    "novelty": 1.0,
+    "diversity_bonus": 1.0
+  },
+  "is_valid": true,
+  "generation": 0,
+  "genes": [
+    {
+      "mr_id": "ChangeBackend",
+      "params": {
+        "available_backends": [
+          "aer_simulator",
+          "aer_simulator_density_matrix",
+          "statevector_simulator",
+          "aer_simulator_statevector",
+          "qasm_simulator"
+        ]
+      }
+    },
+    {
+      "mr_id": "QdiffG1SwapToCnot",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 6
+}

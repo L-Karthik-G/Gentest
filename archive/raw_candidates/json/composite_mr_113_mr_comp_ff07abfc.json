@@ -1,0 +1,53 @@
+{
+  "id": "mr_comp_ff07abfc",
+  "signature": "ChangeTargetBasis(['universal_gate_sets']) -> ChangeOptLevel(['levels']) -> ChangeQubitOrder(['scramble_percentage'])",
+  "depth": 3,
+  "fitness": 0.42,
+  "objectives": {
+    "coverage": 0.75,
+    "cost_efficiency": 0.5656,
+    "unique_gates": 6,
+    "passed_benchmarks": 5,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.0309
+  },
+  "is_valid": true,
+  "generation": 6,
+  "genes": [
+    {
+      "mr_id": "ChangeTargetBasis",
+      "params": {
+        "universal_gate_sets": [
+          {
+            "gates": [
+              "rx",
+              "ry",
+              "rz",
+              "p",
+              "cx"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          0,
+          3,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "mr_id": "ChangeQubitOrder",
+      "params": {
+        "scramble_percentage": 0.5
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 113
+}

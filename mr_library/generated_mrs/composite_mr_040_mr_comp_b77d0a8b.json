@@ -1,0 +1,40 @@
+{
+  "id": "mr_comp_b77d0a8b",
+  "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+  "depth": 3,
+  "fitness": 0.5536,
+  "objectives": {
+    "coverage": 0.875,
+    "cost_efficiency": 0.6944,
+    "unique_gates": 7,
+    "passed_benchmarks": 1,
+    "novelty": 0.5,
+    "diversity_bonus": 0.1448
+  },
+  "is_valid": true,
+  "generation": 1,
+  "genes": [
+    {
+      "mr_id": "QdiffG4ZtoSS",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    },
+    {
+      "mr_id": "QdiffG5CZtoHCnotH",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    },
+    {
+      "mr_id": "ChangeQubitOrder",
+      "params": {
+        "scramble_percentage": 0.75
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 40
+}

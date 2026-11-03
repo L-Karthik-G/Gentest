@@ -1,0 +1,38 @@
+{
+  "id": "mr_comp_091836d2",
+  "signature": "ChangeOptLevel(['levels']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+  "depth": 2,
+  "fitness": 0.5191,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7266,
+    "unique_gates": 9,
+    "passed_benchmarks": 3,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.0163
+  },
+  "is_valid": true,
+  "generation": 7,
+  "genes": [
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          0,
+          2,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "mr_id": "QdiffG3XToHSSH",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 52
+}

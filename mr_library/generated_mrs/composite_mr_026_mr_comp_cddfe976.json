@@ -1,0 +1,33 @@
+{
+  "id": "mr_comp_cddfe976",
+  "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+  "depth": 2,
+  "fitness": 0.6163,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.6597,
+    "unique_gates": 8,
+    "passed_benchmarks": 2,
+    "novelty": 0.6667,
+    "diversity_bonus": 0.1389
+  },
+  "is_valid": true,
+  "generation": 1,
+  "genes": [
+    {
+      "mr_id": "ChangeQubitOrder",
+      "params": {
+        "scramble_percentage": 0.5
+      }
+    },
+    {
+      "mr_id": "QdiffG1SwapToCnot",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 26
+}

@@ -1,0 +1,39 @@
+{
+  "id": "mr_comp_4ca21914",
+  "signature": "ChangeOptLevel(['levels']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+  "depth": 2,
+  "fitness": 0.5344,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7366,
+    "unique_gates": 10,
+    "passed_benchmarks": 5,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.0678
+  },
+  "is_valid": true,
+  "generation": 3,
+  "genes": [
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "mr_id": "ChangeCouplingMap",
+      "params": {
+        "min_perc_nodes": 1,
+        "max_perc_nodes": 1.39,
+        "min_connection_density": 0.09,
+        "max_connection_density": 0.22,
+        "force_connected": true
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 44
+}

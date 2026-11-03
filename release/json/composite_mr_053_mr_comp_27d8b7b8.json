@@ -1,0 +1,34 @@
+{
+  "id": "mr_comp_27d8b7b8",
+  "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+  "depth": 2,
+  "fitness": 0.5183,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.5416,
+    "unique_gates": 13,
+    "passed_benchmarks": 3,
+    "novelty": 0.5,
+    "diversity_bonus": 0.0317
+  },
+  "is_valid": true,
+  "generation": 6,
+  "genes": [
+    {
+      "mr_id": "QdiffG3XToHSSH",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    },
+    {
+      "mr_id": "QdiffG7CCNOTDecomposition",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 53
+}

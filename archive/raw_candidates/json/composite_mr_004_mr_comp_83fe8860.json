@@ -1,0 +1,40 @@
+{
+  "id": "mr_comp_83fe8860",
+  "signature": "ChangeBackend(['available_backends']) -> ChangeBackend(['available_backends'])",
+  "depth": 2,
+  "fitness": 0.9348,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7391,
+    "unique_gates": 10,
+    "passed_benchmarks": 5,
+    "novelty": 1.0,
+    "diversity_bonus": 1.0
+  },
+  "is_valid": true,
+  "generation": 0,
+  "genes": [
+    {
+      "mr_id": "ChangeBackend",
+      "params": {
+        "available_backends": [
+          "qasm_simulator",
+          "aer_simulator_matrix_product_state",
+          "aer_simulator",
+          "statevector_simulator",
+          "aer_simulator_statevector"
+        ]
+      }
+    },
+    {
+      "mr_id": "ChangeBackend",
+      "params": {
+        "available_backends": [
+          "aer_simulator_matrix_product_state"
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 4
+}

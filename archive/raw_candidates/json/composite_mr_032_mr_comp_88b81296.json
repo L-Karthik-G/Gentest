@@ -1,0 +1,39 @@
+{
+  "id": "mr_comp_88b81296",
+  "signature": "ChangeOptLevel(['levels']) -> ChangeOptLevel(['levels'])",
+  "depth": 2,
+  "fitness": 0.5694,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7321,
+    "unique_gates": 10,
+    "passed_benchmarks": 5,
+    "novelty": 0.5,
+    "diversity_bonus": 0.0455
+  },
+  "is_valid": true,
+  "generation": 5,
+  "genes": [
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          1,
+          0,
+          2
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 32
+}

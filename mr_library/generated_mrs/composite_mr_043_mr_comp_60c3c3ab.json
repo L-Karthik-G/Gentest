@@ -1,0 +1,33 @@
+{
+  "id": "mr_comp_60c3c3ab",
+  "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+  "depth": 2,
+  "fitness": 0.5357,
+  "objectives": {
+    "coverage": 0.875,
+    "cost_efficiency": 0.7353,
+    "unique_gates": 7,
+    "passed_benchmarks": 1,
+    "novelty": 0.5,
+    "diversity_bonus": 0.0324
+  },
+  "is_valid": true,
+  "generation": 8,
+  "genes": [
+    {
+      "mr_id": "QdiffG2TwoHToId",
+      "params": {
+        "add_identity_matrix": true
+      }
+    },
+    {
+      "mr_id": "QdiffG3XToHSSH",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 43
+}

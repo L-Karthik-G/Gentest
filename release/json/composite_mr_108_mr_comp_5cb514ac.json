@@ -1,0 +1,49 @@
+{
+  "id": "mr_comp_5cb514ac",
+  "signature": "ChangeBackend(['available_backends']) -> ChangeOptLevel(['levels']) -> ChangeQubitOrder(['scramble_percentage'])",
+  "depth": 3,
+  "fitness": 0.4281,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7069,
+    "unique_gates": 9,
+    "passed_benchmarks": 5,
+    "novelty": 0.0,
+    "diversity_bonus": 0.0054
+  },
+  "is_valid": true,
+  "generation": 8,
+  "genes": [
+    {
+      "mr_id": "ChangeBackend",
+      "params": {
+        "available_backends": [
+          "aer_simulator",
+          "aer_simulator_density_matrix",
+          "statevector_simulator",
+          "aer_simulator_statevector",
+          "qasm_simulator"
+        ]
+      }
+    },
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          3,
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "mr_id": "ChangeQubitOrder",
+      "params": {
+        "scramble_percentage": 0.5
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 108
+}

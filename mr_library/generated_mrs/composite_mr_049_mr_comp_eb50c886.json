@@ -1,0 +1,42 @@
+{
+  "id": "mr_comp_eb50c886",
+  "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> ChangeTargetBasis(['universal_gate_sets'])",
+  "depth": 2,
+  "fitness": 0.5221,
+  "objectives": {
+    "coverage": 0.75,
+    "cost_efficiency": 0.4717,
+    "unique_gates": 6,
+    "passed_benchmarks": 1,
+    "novelty": 0.6667,
+    "diversity_bonus": 0.2
+  },
+  "is_valid": true,
+  "generation": 1,
+  "genes": [
+    {
+      "mr_id": "QdiffG2TwoHToId",
+      "params": {
+        "add_identity_matrix": true
+      }
+    },
+    {
+      "mr_id": "ChangeTargetBasis",
+      "params": {
+        "universal_gate_sets": [
+          {
+            "gates": [
+              "rx",
+              "ry",
+              "rz",
+              "p",
+              "cx"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 49
+}

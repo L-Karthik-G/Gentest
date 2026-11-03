@@ -1,0 +1,46 @@
+{
+  "id": "mr_comp_f7d13c73",
+  "signature": "ChangeBackend(['available_backends']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+  "depth": 3,
+  "fitness": 0.5206,
+  "objectives": {
+    "coverage": 0.875,
+    "cost_efficiency": 0.7353,
+    "unique_gates": 7,
+    "passed_benchmarks": 1,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.1389
+  },
+  "is_valid": true,
+  "generation": 1,
+  "genes": [
+    {
+      "mr_id": "ChangeBackend",
+      "params": {
+        "available_backends": [
+          "aer_simulator",
+          "aer_simulator_density_matrix",
+          "statevector_simulator",
+          "aer_simulator_statevector",
+          "qasm_simulator"
+        ]
+      }
+    },
+    {
+      "mr_id": "QdiffG4ZtoSS",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    },
+    {
+      "mr_id": "QdiffG3XToHSSH",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 51
+}

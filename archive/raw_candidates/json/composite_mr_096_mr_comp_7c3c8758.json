@@ -1,0 +1,48 @@
+{
+  "id": "mr_comp_7c3c8758",
+  "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> ChangeOptLevel(['levels']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+  "depth": 3,
+  "fitness": 0.4379,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7266,
+    "unique_gates": 9,
+    "passed_benchmarks": 3,
+    "novelty": 0.0,
+    "diversity_bonus": 0.025
+  },
+  "is_valid": true,
+  "generation": 5,
+  "genes": [
+    {
+      "mr_id": "QdiffG3XToHSSH",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    },
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          0,
+          3,
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "mr_id": "ChangeCouplingMap",
+      "params": {
+        "min_perc_nodes": 1,
+        "max_perc_nodes": 1.37,
+        "min_connection_density": 0.14,
+        "max_connection_density": 0.29,
+        "force_connected": true
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 96
+}

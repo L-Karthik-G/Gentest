@@ -1,0 +1,37 @@
+{
+  "id": "mr_comp_89663f0d",
+  "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change'])",
+  "depth": 2,
+  "fitness": 0.4828,
+  "objectives": {
+    "coverage": 0.875,
+    "cost_efficiency": 0.6944,
+    "unique_gates": 7,
+    "passed_benchmarks": 1,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.0284
+  },
+  "is_valid": true,
+  "generation": 6,
+  "genes": [
+    {
+      "mr_id": "ChangeCouplingMap",
+      "params": {
+        "min_perc_nodes": 1,
+        "max_perc_nodes": 1.49,
+        "min_connection_density": 0.09,
+        "max_connection_density": 0.28,
+        "force_connected": true
+      }
+    },
+    {
+      "mr_id": "QdiffG5CZtoHCnotH",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 74
+}

@@ -1,0 +1,32 @@
+{
+  "id": "mr_comp_2a4b0c25",
+  "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> ChangeQubitOrder(['scramble_percentage'])",
+  "depth": 2,
+  "fitness": 0.9026,
+  "objectives": {
+    "coverage": 0.875,
+    "cost_efficiency": 0.7353,
+    "unique_gates": 7,
+    "passed_benchmarks": 1,
+    "novelty": 1.0,
+    "diversity_bonus": 1.0
+  },
+  "is_valid": true,
+  "generation": 0,
+  "genes": [
+    {
+      "mr_id": "QdiffG2TwoHToId",
+      "params": {
+        "add_identity_matrix": true
+      }
+    },
+    {
+      "mr_id": "ChangeQubitOrder",
+      "params": {
+        "scramble_percentage": 0.75
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 8
+}

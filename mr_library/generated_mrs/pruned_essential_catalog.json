@@ -1,0 +1,3058 @@
+{
+  "total_essential_relations": 74,
+  "original_count": 131,
+  "redundant_filtered_out": 57,
+  "description": "Curated, non-redundant composite metamorphic relations library optimized for MQT-CC testing.",
+  "relations": [
+    {
+      "index": 2,
+      "id": "mr_comp_49a4c2ec",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 2,
+      "fitness": 0.9348,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.7391,
+        "unique_gates": 10,
+        "passed_benchmarks": 5,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.15,
+            "min_connection_density": 0.06,
+            "max_connection_density": 0.2,
+            "force_connected": true
+          }
+        },
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.5
+          }
+        }
+      ],
+      "json_file": "composite_mr_002_mr_comp_49a4c2ec.json",
+      "py_file": "followup_mr_002.py",
+      "qasm_file": "circuit_mr_002.qasm",
+      "pruned_rank": 1
+    },
+    {
+      "index": 5,
+      "id": "mr_comp_d2762bf1",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> ChangeBackend(['available_backends'])",
+      "depth": 2,
+      "fitness": 0.9298,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.7192,
+        "unique_gates": 10,
+        "passed_benchmarks": 3,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator_statevector",
+              "qasm_simulator",
+              "aer_simulator_density_matrix",
+              "aer_simulator_matrix_product_state"
+            ]
+          }
+        }
+      ],
+      "json_file": "composite_mr_005_mr_comp_d2762bf1.json",
+      "py_file": "followup_mr_005.py",
+      "qasm_file": "circuit_mr_005.qasm",
+      "pruned_rank": 2
+    },
+    {
+      "index": 6,
+      "id": "mr_comp_f2afe4bd",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.9149,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.6597,
+        "unique_gates": 8,
+        "passed_benchmarks": 2,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator",
+              "aer_simulator_density_matrix",
+              "statevector_simulator",
+              "aer_simulator_statevector",
+              "qasm_simulator"
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG1SwapToCnot",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_006_mr_comp_f2afe4bd.json",
+      "py_file": "followup_mr_006.py",
+      "qasm_file": "circuit_mr_006.qasm",
+      "pruned_rank": 3
+    },
+    {
+      "index": 7,
+      "id": "mr_comp_3b854f93",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.9149,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.6597,
+        "unique_gates": 8,
+        "passed_benchmarks": 2,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.13,
+            "min_connection_density": 0.11,
+            "max_connection_density": 0.28,
+            "force_connected": true
+          }
+        },
+        {
+          "mr_id": "QdiffG1SwapToCnot",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_007_mr_comp_3b854f93.json",
+      "py_file": "followup_mr_007.py",
+      "qasm_file": "circuit_mr_007.qasm",
+      "pruned_rank": 4
+    },
+    {
+      "index": 9,
+      "id": "mr_comp_7c6a0717",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.9026,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.7353,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.5
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_009_mr_comp_7c6a0717.json",
+      "py_file": "followup_mr_009.py",
+      "qasm_file": "circuit_mr_009.qasm",
+      "pruned_rank": 5
+    },
+    {
+      "index": 10,
+      "id": "mr_comp_1294b8f3",
+      "signature": "QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.8923,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_010_mr_comp_1294b8f3.json",
+      "py_file": "followup_mr_010.py",
+      "qasm_file": "circuit_mr_010.qasm",
+      "pruned_rank": 6
+    },
+    {
+      "index": 11,
+      "id": "mr_comp_bc533f61",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.8923,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.75
+          }
+        }
+      ],
+      "json_file": "composite_mr_011_mr_comp_bc533f61.json",
+      "py_file": "followup_mr_011.py",
+      "qasm_file": "circuit_mr_011.qasm",
+      "pruned_rank": 7
+    },
+    {
+      "index": 12,
+      "id": "mr_comp_19292182",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeBackend(['available_backends'])",
+      "depth": 3,
+      "fitness": 0.8923,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "qasm_simulator",
+              "aer_simulator",
+              "aer_simulator_matrix_product_state",
+              "aer_simulator_statevector",
+              "statevector_simulator",
+              "aer_simulator_density_matrix"
+            ]
+          }
+        }
+      ],
+      "json_file": "composite_mr_012_mr_comp_19292182.json",
+      "py_file": "followup_mr_012.py",
+      "qasm_file": "circuit_mr_012.qasm",
+      "pruned_rank": 8
+    },
+    {
+      "index": 13,
+      "id": "mr_comp_047402b4",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeOptLevel(['levels']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.8873,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.5491,
+        "unique_gates": 11,
+        "passed_benchmarks": 3,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.49,
+            "min_connection_density": 0.05,
+            "max_connection_density": 0.22,
+            "force_connected": true
+          }
+        },
+        {
+          "mr_id": "ChangeOptLevel",
+          "params": {
+            "levels": [
+              1
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG7CCNOTDecomposition",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_013_mr_comp_047402b4.json",
+      "py_file": "followup_mr_013.py",
+      "qasm_file": "circuit_mr_013.qasm",
+      "pruned_rank": 9
+    },
+    {
+      "index": 14,
+      "id": "mr_comp_c5959a7f",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.8802,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.5208,
+        "unique_gates": 8,
+        "passed_benchmarks": 1,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG2TwoHToId",
+          "params": {
+            "add_identity_matrix": true
+          }
+        },
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG7CCNOTDecomposition",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_014_mr_comp_c5959a7f.json",
+      "py_file": "followup_mr_014.py",
+      "qasm_file": "circuit_mr_014.qasm",
+      "pruned_rank": 10
+    },
+    {
+      "index": 16,
+      "id": "mr_comp_ca46fe5b",
+      "signature": "QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeOptLevel(['levels'])",
+      "depth": 2,
+      "fitness": 0.8661,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.7143,
+        "unique_gates": 6,
+        "passed_benchmarks": 1,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeOptLevel",
+          "params": {
+            "levels": [
+              0,
+              2,
+              1,
+              3
+            ]
+          }
+        }
+      ],
+      "json_file": "composite_mr_016_mr_comp_ca46fe5b.json",
+      "py_file": "followup_mr_016.py",
+      "qasm_file": "circuit_mr_016.qasm",
+      "pruned_rank": 11
+    },
+    {
+      "index": 17,
+      "id": "mr_comp_ab7115f2",
+      "signature": "QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.8611,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 6,
+        "passed_benchmarks": 1,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG1SwapToCnot",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_017_mr_comp_ab7115f2.json",
+      "py_file": "followup_mr_017.py",
+      "qasm_file": "circuit_mr_017.qasm",
+      "pruned_rank": 12
+    },
+    {
+      "index": 18,
+      "id": "mr_comp_ae727414",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.8611,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 6,
+        "passed_benchmarks": 1,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG2TwoHToId",
+          "params": {
+            "add_identity_matrix": true
+          }
+        },
+        {
+          "mr_id": "QdiffG1SwapToCnot",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_018_mr_comp_ae727414.json",
+      "py_file": "followup_mr_018.py",
+      "qasm_file": "circuit_mr_018.qasm",
+      "pruned_rank": 13
+    },
+    {
+      "index": 19,
+      "id": "mr_comp_0cd8b292",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.8611,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 6,
+        "passed_benchmarks": 1,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG1SwapToCnot",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_019_mr_comp_0cd8b292.json",
+      "py_file": "followup_mr_019.py",
+      "qasm_file": "circuit_mr_019.qasm",
+      "pruned_rank": 14
+    },
+    {
+      "index": 21,
+      "id": "mr_comp_cba230cb",
+      "signature": "ChangeTargetBasis(['universal_gate_sets']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 2,
+      "fitness": 0.8308,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.5734,
+        "unique_gates": 6,
+        "passed_benchmarks": 5,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeTargetBasis",
+          "params": {
+            "universal_gate_sets": [
+              {
+                "gates": [
+                  "rx",
+                  "ry",
+                  "rz",
+                  "p",
+                  "cx"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.18,
+            "min_connection_density": 0.12,
+            "max_connection_density": 0.2,
+            "force_connected": true
+          }
+        }
+      ],
+      "json_file": "composite_mr_021_mr_comp_cba230cb.json",
+      "py_file": "followup_mr_021.py",
+      "qasm_file": "circuit_mr_021.qasm",
+      "pruned_rank": 15
+    },
+    {
+      "index": 23,
+      "id": "mr_comp_74bc0302",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.7703,
+      "objectives": {
+        "coverage": 0.5,
+        "cost_efficiency": 0.5814,
+        "unique_gates": 4,
+        "passed_benchmarks": 1,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator_density_matrix",
+              "aer_simulator",
+              "aer_simulator_statevector",
+              "qasm_simulator",
+              "statevector_simulator",
+              "aer_simulator_matrix_product_state"
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG1SwapToCnot",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG1SwapToCnot",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_023_mr_comp_74bc0302.json",
+      "py_file": "followup_mr_023.py",
+      "qasm_file": "circuit_mr_023.qasm",
+      "pruned_rank": 16
+    },
+    {
+      "index": 24,
+      "id": "mr_comp_f846b66c",
+      "signature": "ChangeTargetBasis(['universal_gate_sets']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.7524,
+      "objectives": {
+        "coverage": 0.625,
+        "cost_efficiency": 0.3846,
+        "unique_gates": 5,
+        "passed_benchmarks": 1,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeTargetBasis",
+          "params": {
+            "universal_gate_sets": [
+              {
+                "gates": [
+                  "cx",
+                  "h",
+                  "s",
+                  "t"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG7CCNOTDecomposition",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_024_mr_comp_f846b66c.json",
+      "py_file": "followup_mr_024.py",
+      "qasm_file": "circuit_mr_024.qasm",
+      "pruned_rank": 17
+    },
+    {
+      "index": 25,
+      "id": "mr_comp_ec473e1b",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> ChangeTargetBasis(['universal_gate_sets']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.7524,
+      "objectives": {
+        "coverage": 0.625,
+        "cost_efficiency": 0.3846,
+        "unique_gates": 5,
+        "passed_benchmarks": 1,
+        "novelty": 1.0,
+        "diversity_bonus": 1.0
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.75
+          }
+        },
+        {
+          "mr_id": "ChangeTargetBasis",
+          "params": {
+            "universal_gate_sets": [
+              {
+                "gates": [
+                  "cx",
+                  "h",
+                  "s",
+                  "t"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_025_mr_comp_ec473e1b.json",
+      "py_file": "followup_mr_025.py",
+      "qasm_file": "circuit_mr_025.qasm",
+      "pruned_rank": 18
+    },
+    {
+      "index": 26,
+      "id": "mr_comp_cddfe976",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.6163,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.6597,
+        "unique_gates": 8,
+        "passed_benchmarks": 2,
+        "novelty": 0.6667,
+        "diversity_bonus": 0.1389
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.5
+          }
+        },
+        {
+          "mr_id": "QdiffG1SwapToCnot",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_026_mr_comp_cddfe976.json",
+      "py_file": "followup_mr_026.py",
+      "qasm_file": "circuit_mr_026.qasm",
+      "pruned_rank": 19
+    },
+    {
+      "index": 28,
+      "id": "mr_comp_ab35a71f",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeOptLevel(['levels']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.6018,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.7266,
+        "unique_gates": 9,
+        "passed_benchmarks": 3,
+        "novelty": 0.5,
+        "diversity_bonus": 0.1806
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.62,
+            "min_connection_density": 0.15,
+            "max_connection_density": 0.26,
+            "force_connected": true
+          }
+        },
+        {
+          "mr_id": "ChangeOptLevel",
+          "params": {
+            "levels": [
+              1
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_028_mr_comp_ab35a71f.json",
+      "py_file": "followup_mr_028.py",
+      "qasm_file": "circuit_mr_028.qasm",
+      "pruned_rank": 20
+    },
+    {
+      "index": 29,
+      "id": "mr_comp_4d5da92d",
+      "signature": "ChangeBackend(['available_backends']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 2,
+      "fitness": 0.5962,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.7391,
+        "unique_gates": 10,
+        "passed_benchmarks": 5,
+        "novelty": 0.5,
+        "diversity_bonus": 0.1458
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "qasm_simulator",
+              "aer_simulator_matrix_product_state",
+              "aer_simulator",
+              "statevector_simulator",
+              "aer_simulator_statevector"
+            ]
+          }
+        },
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.5
+          }
+        }
+      ],
+      "json_file": "composite_mr_029_mr_comp_4d5da92d.json",
+      "py_file": "followup_mr_029.py",
+      "qasm_file": "circuit_mr_029.qasm",
+      "pruned_rank": 21
+    },
+    {
+      "index": 30,
+      "id": "mr_comp_43a3a816",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5913,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.7192,
+        "unique_gates": 10,
+        "passed_benchmarks": 3,
+        "novelty": 0.5,
+        "diversity_bonus": 0.1458
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.51,
+            "min_connection_density": 0.14,
+            "max_connection_density": 0.21,
+            "force_connected": true
+          }
+        },
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_030_mr_comp_43a3a816.json",
+      "py_file": "followup_mr_030.py",
+      "qasm_file": "circuit_mr_030.qasm",
+      "pruned_rank": 22
+    },
+    {
+      "index": 33,
+      "id": "mr_comp_951f81a4",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 2,
+      "fitness": 0.5682,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.7353,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.5,
+        "diversity_bonus": 0.1625
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG2TwoHToId",
+          "params": {
+            "add_identity_matrix": true
+          }
+        },
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.37,
+            "min_connection_density": 0.14,
+            "max_connection_density": 0.29,
+            "force_connected": true
+          }
+        }
+      ],
+      "json_file": "composite_mr_033_mr_comp_951f81a4.json",
+      "py_file": "followup_mr_033.py",
+      "qasm_file": "circuit_mr_033.qasm",
+      "pruned_rank": 23
+    },
+    {
+      "index": 34,
+      "id": "mr_comp_61af2f68",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> ChangeBackend(['available_backends'])",
+      "depth": 2,
+      "fitness": 0.5682,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.7353,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.5,
+        "diversity_bonus": 0.1625
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG2TwoHToId",
+          "params": {
+            "add_identity_matrix": true
+          }
+        },
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator_statevector",
+              "qasm_simulator",
+              "aer_simulator_density_matrix",
+              "aer_simulator_matrix_product_state"
+            ]
+          }
+        }
+      ],
+      "json_file": "composite_mr_034_mr_comp_61af2f68.json",
+      "py_file": "followup_mr_034.py",
+      "qasm_file": "circuit_mr_034.qasm",
+      "pruned_rank": 24
+    },
+    {
+      "index": 36,
+      "id": "mr_comp_e1c8ec9b",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5588,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.7353,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.5,
+        "diversity_bonus": 0.125
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.15,
+            "min_connection_density": 0.06,
+            "max_connection_density": 0.2,
+            "force_connected": true
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_036_mr_comp_e1c8ec9b.json",
+      "py_file": "followup_mr_036.py",
+      "qasm_file": "circuit_mr_036.qasm",
+      "pruned_rank": 25
+    },
+    {
+      "index": 38,
+      "id": "mr_comp_fb5061d6",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeBackend(['available_backends'])",
+      "depth": 3,
+      "fitness": 0.5563,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.5,
+        "diversity_bonus": 0.156
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG2TwoHToId",
+          "params": {
+            "add_identity_matrix": true
+          }
+        },
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator_matrix_product_state"
+            ]
+          }
+        }
+      ],
+      "json_file": "composite_mr_038_mr_comp_fb5061d6.json",
+      "py_file": "followup_mr_038.py",
+      "qasm_file": "circuit_mr_038.qasm",
+      "pruned_rank": 26
+    },
+    {
+      "index": 39,
+      "id": "mr_comp_e83a3f19",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 2,
+      "fitness": 0.5548,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.7192,
+        "unique_gates": 10,
+        "passed_benchmarks": 3,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.1667
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.75
+          }
+        }
+      ],
+      "json_file": "composite_mr_039_mr_comp_e83a3f19.json",
+      "py_file": "followup_mr_039.py",
+      "qasm_file": "circuit_mr_039.qasm",
+      "pruned_rank": 27
+    },
+    {
+      "index": 40,
+      "id": "mr_comp_b77d0a8b",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.5536,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.5,
+        "diversity_bonus": 0.1448
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.75
+          }
+        }
+      ],
+      "json_file": "composite_mr_040_mr_comp_b77d0a8b.json",
+      "py_file": "followup_mr_040.py",
+      "qasm_file": "circuit_mr_040.qasm",
+      "pruned_rank": 28
+    },
+    {
+      "index": 41,
+      "id": "mr_comp_c5c3cd1f",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.5491,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.5435,
+        "unique_gates": 8,
+        "passed_benchmarks": 1,
+        "novelty": 0.5,
+        "diversity_bonus": 0.1528
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 1.0
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG7CCNOTDecomposition",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_041_mr_comp_c5c3cd1f.json",
+      "py_file": "followup_mr_041.py",
+      "qasm_file": "circuit_mr_041.qasm",
+      "pruned_rank": 29
+    },
+    {
+      "index": 42,
+      "id": "mr_comp_117509d3",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5477,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.545,
+        "unique_gates": 12,
+        "passed_benchmarks": 3,
+        "novelty": 0.5,
+        "diversity_bonus": 0.1458
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator_statevector",
+              "aer_simulator_matrix_product_state",
+              "statevector_simulator",
+              "aer_simulator_density_matrix",
+              "qasm_simulator",
+              "aer_simulator"
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG7CCNOTDecomposition",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_042_mr_comp_117509d3.json",
+      "py_file": "followup_mr_042.py",
+      "qasm_file": "circuit_mr_042.qasm",
+      "pruned_rank": 30
+    },
+    {
+      "index": 43,
+      "id": "mr_comp_60c3c3ab",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5357,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.7353,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.5,
+        "diversity_bonus": 0.0324
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG2TwoHToId",
+          "params": {
+            "add_identity_matrix": true
+          }
+        },
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_043_mr_comp_60c3c3ab.json",
+      "py_file": "followup_mr_043.py",
+      "qasm_file": "circuit_mr_043.qasm",
+      "pruned_rank": 31
+    },
+    {
+      "index": 44,
+      "id": "mr_comp_4ca21914",
+      "signature": "ChangeOptLevel(['levels']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 2,
+      "fitness": 0.5344,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.7366,
+        "unique_gates": 10,
+        "passed_benchmarks": 5,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0678
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeOptLevel",
+          "params": {
+            "levels": [
+              0,
+              2
+            ]
+          }
+        },
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.39,
+            "min_connection_density": 0.09,
+            "max_connection_density": 0.22,
+            "force_connected": true
+          }
+        }
+      ],
+      "json_file": "composite_mr_044_mr_comp_4ca21914.json",
+      "py_file": "followup_mr_044.py",
+      "qasm_file": "circuit_mr_044.qasm",
+      "pruned_rank": 32
+    },
+    {
+      "index": 47,
+      "id": "mr_comp_23ef6adb",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.5241,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.7353,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.1528
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.5
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.5
+          }
+        }
+      ],
+      "json_file": "composite_mr_047_mr_comp_23ef6adb.json",
+      "py_file": "followup_mr_047.py",
+      "qasm_file": "circuit_mr_047.qasm",
+      "pruned_rank": 33
+    },
+    {
+      "index": 49,
+      "id": "mr_comp_eb50c886",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> ChangeTargetBasis(['universal_gate_sets'])",
+      "depth": 2,
+      "fitness": 0.5221,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.4717,
+        "unique_gates": 6,
+        "passed_benchmarks": 1,
+        "novelty": 0.6667,
+        "diversity_bonus": 0.2
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG2TwoHToId",
+          "params": {
+            "add_identity_matrix": true
+          }
+        },
+        {
+          "mr_id": "ChangeTargetBasis",
+          "params": {
+            "universal_gate_sets": [
+              {
+                "gates": [
+                  "rx",
+                  "ry",
+                  "rz",
+                  "p",
+                  "cx"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "json_file": "composite_mr_049_mr_comp_eb50c886.json",
+      "py_file": "followup_mr_049.py",
+      "qasm_file": "circuit_mr_049.qasm",
+      "pruned_rank": 34
+    },
+    {
+      "index": 51,
+      "id": "mr_comp_f7d13c73",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.5206,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.7353,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.1389
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator",
+              "aer_simulator_density_matrix",
+              "statevector_simulator",
+              "aer_simulator_statevector",
+              "qasm_simulator"
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_051_mr_comp_f7d13c73.json",
+      "py_file": "followup_mr_051.py",
+      "qasm_file": "circuit_mr_051.qasm",
+      "pruned_rank": 35
+    },
+    {
+      "index": 52,
+      "id": "mr_comp_091836d2",
+      "signature": "ChangeOptLevel(['levels']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5191,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.7266,
+        "unique_gates": 9,
+        "passed_benchmarks": 3,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0163
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeOptLevel",
+          "params": {
+            "levels": [
+              0,
+              2,
+              3,
+              1
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_052_mr_comp_091836d2.json",
+      "py_file": "followup_mr_052.py",
+      "qasm_file": "circuit_mr_052.qasm",
+      "pruned_rank": 36
+    },
+    {
+      "index": 53,
+      "id": "mr_comp_27d8b7b8",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5183,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.5416,
+        "unique_gates": 13,
+        "passed_benchmarks": 3,
+        "novelty": 0.5,
+        "diversity_bonus": 0.0317
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG7CCNOTDecomposition",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_053_mr_comp_27d8b7b8.json",
+      "py_file": "followup_mr_053.py",
+      "qasm_file": "circuit_mr_053.qasm",
+      "pruned_rank": 37
+    },
+    {
+      "index": 54,
+      "id": "mr_comp_6c727e0e",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.5154,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.1587
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.5
+          }
+        },
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.75
+          }
+        }
+      ],
+      "json_file": "composite_mr_054_mr_comp_6c727e0e.json",
+      "py_file": "followup_mr_054.py",
+      "qasm_file": "circuit_mr_054.qasm",
+      "pruned_rank": 38
+    },
+    {
+      "index": 56,
+      "id": "mr_comp_da5de3fa",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeBackend(['available_backends'])",
+      "depth": 3,
+      "fitness": 0.5119,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.1448
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator_matrix_product_state"
+            ]
+          }
+        }
+      ],
+      "json_file": "composite_mr_056_mr_comp_da5de3fa.json",
+      "py_file": "followup_mr_056.py",
+      "qasm_file": "circuit_mr_056.qasm",
+      "pruned_rank": 39
+    },
+    {
+      "index": 57,
+      "id": "mr_comp_0bf7305c",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.5119,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.1448
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.13,
+            "min_connection_density": 0.11,
+            "max_connection_density": 0.28,
+            "force_connected": true
+          }
+        },
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.75
+          }
+        }
+      ],
+      "json_file": "composite_mr_057_mr_comp_0bf7305c.json",
+      "py_file": "followup_mr_057.py",
+      "qasm_file": "circuit_mr_057.qasm",
+      "pruned_rank": 40
+    },
+    {
+      "index": 58,
+      "id": "mr_comp_821ad5e0",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeOptLevel(['levels']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.5117,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.6757,
+        "unique_gates": 8,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0379
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.25,
+            "min_connection_density": 0.09,
+            "max_connection_density": 0.24,
+            "force_connected": true
+          }
+        },
+        {
+          "mr_id": "ChangeOptLevel",
+          "params": {
+            "levels": [
+              3,
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_058_mr_comp_821ad5e0.json",
+      "py_file": "followup_mr_058.py",
+      "qasm_file": "circuit_mr_058.qasm",
+      "pruned_rank": 41
+    },
+    {
+      "index": 60,
+      "id": "mr_comp_8d2a65dc",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5052,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.5416,
+        "unique_gates": 12,
+        "passed_benchmarks": 3,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.1458
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.13,
+            "min_connection_density": 0.11,
+            "max_connection_density": 0.28,
+            "force_connected": true
+          }
+        },
+        {
+          "mr_id": "QdiffG7CCNOTDecomposition",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_060_mr_comp_8d2a65dc.json",
+      "py_file": "followup_mr_060.py",
+      "qasm_file": "circuit_mr_060.qasm",
+      "pruned_rank": 42
+    },
+    {
+      "index": 61,
+      "id": "mr_comp_e4f97cb2",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.505,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.7111,
+        "unique_gates": 6,
+        "passed_benchmarks": 2,
+        "novelty": 0.5,
+        "diversity_bonus": 0.0588
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_061_mr_comp_e4f97cb2.json",
+      "py_file": "followup_mr_061.py",
+      "qasm_file": "circuit_mr_061.qasm",
+      "pruned_rank": 43
+    },
+    {
+      "index": 62,
+      "id": "mr_comp_ef8c040c",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5016,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.7353,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0627
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_062_mr_comp_ef8c040c.json",
+      "py_file": "followup_mr_062.py",
+      "qasm_file": "circuit_mr_062.qasm",
+      "pruned_rank": 44
+    },
+    {
+      "index": 63,
+      "id": "mr_comp_6fc6b65f",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> ChangeOptLevel(['levels']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.4995,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.6254,
+        "unique_gates": 9,
+        "passed_benchmarks": 3,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0394
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeOptLevel",
+          "params": {
+            "levels": [
+              0,
+              3,
+              2,
+              1
+            ]
+          }
+        },
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.5
+          }
+        }
+      ],
+      "json_file": "composite_mr_063_mr_comp_6fc6b65f.json",
+      "py_file": "followup_mr_063.py",
+      "qasm_file": "circuit_mr_063.qasm",
+      "pruned_rank": 45
+    },
+    {
+      "index": 64,
+      "id": "mr_comp_235638fe",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeBackend(['available_backends'])",
+      "depth": 2,
+      "fitness": 0.4965,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.7353,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0424
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator_statevector",
+              "qasm_simulator",
+              "aer_simulator_density_matrix",
+              "aer_simulator_matrix_product_state"
+            ]
+          }
+        }
+      ],
+      "json_file": "composite_mr_064_mr_comp_235638fe.json",
+      "py_file": "followup_mr_064.py",
+      "qasm_file": "circuit_mr_064.qasm",
+      "pruned_rank": 46
+    },
+    {
+      "index": 66,
+      "id": "mr_comp_757caebf",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.4955,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.7353,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0384
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator",
+              "aer_simulator_density_matrix",
+              "statevector_simulator",
+              "aer_simulator_statevector",
+              "qasm_simulator"
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.75
+          }
+        }
+      ],
+      "json_file": "composite_mr_066_mr_comp_757caebf.json",
+      "py_file": "followup_mr_066.py",
+      "qasm_file": "circuit_mr_066.qasm",
+      "pruned_rank": 47
+    },
+    {
+      "index": 67,
+      "id": "mr_comp_4052c8bb",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4945,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.5435,
+        "unique_gates": 8,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.101
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG2TwoHToId",
+          "params": {
+            "add_identity_matrix": true
+          }
+        },
+        {
+          "mr_id": "QdiffG7CCNOTDecomposition",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_067_mr_comp_4052c8bb.json",
+      "py_file": "followup_mr_067.py",
+      "qasm_file": "circuit_mr_067.qasm",
+      "pruned_rank": 48
+    },
+    {
+      "index": 68,
+      "id": "mr_comp_5b0d7143",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4914,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.5435,
+        "unique_gates": 8,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0889
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG7CCNOTDecomposition",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_068_mr_comp_5b0d7143.json",
+      "py_file": "followup_mr_068.py",
+      "qasm_file": "circuit_mr_068.qasm",
+      "pruned_rank": 49
+    },
+    {
+      "index": 69,
+      "id": "mr_comp_d251dc40",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 3,
+      "fitness": 0.4912,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.7353,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.021
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator",
+              "aer_simulator_density_matrix",
+              "statevector_simulator",
+              "aer_simulator_statevector",
+              "qasm_simulator"
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.37,
+            "min_connection_density": 0.14,
+            "max_connection_density": 0.29,
+            "force_connected": true
+          }
+        }
+      ],
+      "json_file": "composite_mr_069_mr_comp_d251dc40.json",
+      "py_file": "followup_mr_069.py",
+      "qasm_file": "circuit_mr_069.qasm",
+      "pruned_rank": 50
+    },
+    {
+      "index": 71,
+      "id": "mr_comp_f226e1bf",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.4885,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.7353,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0105
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.26,
+            "min_connection_density": 0.06,
+            "max_connection_density": 0.11,
+            "force_connected": true
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.75
+          }
+        }
+      ],
+      "json_file": "composite_mr_071_mr_comp_f226e1bf.json",
+      "py_file": "followup_mr_071.py",
+      "qasm_file": "circuit_mr_071.qasm",
+      "pruned_rank": 51
+    },
+    {
+      "index": 73,
+      "id": "mr_comp_3be855ec",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4833,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 6,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.1556
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG2TwoHToId",
+          "params": {
+            "add_identity_matrix": true
+          }
+        },
+        {
+          "mr_id": "QdiffG1SwapToCnot",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_073_mr_comp_3be855ec.json",
+      "py_file": "followup_mr_073.py",
+      "qasm_file": "circuit_mr_073.qasm",
+      "pruned_rank": 52
+    },
+    {
+      "index": 74,
+      "id": "mr_comp_89663f0d",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4828,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0284
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.49,
+            "min_connection_density": 0.09,
+            "max_connection_density": 0.28,
+            "force_connected": true
+          }
+        },
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_074_mr_comp_89663f0d.json",
+      "py_file": "followup_mr_074.py",
+      "qasm_file": "circuit_mr_074.qasm",
+      "pruned_rank": 53
+    },
+    {
+      "index": 75,
+      "id": "mr_comp_b78e2e21",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.48,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.5435,
+        "unique_gates": 8,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0431
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "qasm_simulator",
+              "aer_simulator_matrix_product_state",
+              "aer_simulator"
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG7CCNOTDecomposition",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_075_mr_comp_b78e2e21.json",
+      "py_file": "followup_mr_075.py",
+      "qasm_file": "circuit_mr_075.qasm",
+      "pruned_rank": 54
+    },
+    {
+      "index": 76,
+      "id": "mr_comp_6b90d22a",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4792,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 6,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.1389
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG3XToHSSH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG1SwapToCnot",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_076_mr_comp_6b90d22a.json",
+      "py_file": "followup_mr_076.py",
+      "qasm_file": "circuit_mr_076.qasm",
+      "pruned_rank": 55
+    },
+    {
+      "index": 77,
+      "id": "mr_comp_3ffcdac1",
+      "signature": "ChangeBackend(['available_backends']) -> ChangeTargetBasis(['universal_gate_sets'])",
+      "depth": 2,
+      "fitness": 0.479,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.5734,
+        "unique_gates": 6,
+        "passed_benchmarks": 5,
+        "novelty": 0.5,
+        "diversity_bonus": 0.0924
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "qasm_simulator",
+              "aer_simulator_matrix_product_state",
+              "aer_simulator",
+              "statevector_simulator",
+              "aer_simulator_statevector"
+            ]
+          }
+        },
+        {
+          "mr_id": "ChangeTargetBasis",
+          "params": {
+            "universal_gate_sets": [
+              {
+                "gates": [
+                  "rx",
+                  "ry",
+                  "rz",
+                  "p",
+                  "cx"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "json_file": "composite_mr_077_mr_comp_3ffcdac1.json",
+      "py_file": "followup_mr_077.py",
+      "qasm_file": "circuit_mr_077.qasm",
+      "pruned_rank": 56
+    },
+    {
+      "index": 78,
+      "id": "mr_comp_80493143",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.4759,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.5435,
+        "unique_gates": 8,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0268
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.26,
+            "min_connection_density": 0.06,
+            "max_connection_density": 0.11,
+            "force_connected": true
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG7CCNOTDecomposition",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_078_mr_comp_80493143.json",
+      "py_file": "followup_mr_078.py",
+      "qasm_file": "circuit_mr_078.qasm",
+      "pruned_rank": 57
+    },
+    {
+      "index": 79,
+      "id": "mr_comp_a21b790b",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeOptLevel(['levels']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.4754,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.7576,
+        "unique_gates": 6,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0605
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeOptLevel",
+          "params": {
+            "levels": [
+              1
+            ]
+          }
+        },
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 1.0
+          }
+        }
+      ],
+      "json_file": "composite_mr_079_mr_comp_a21b790b.json",
+      "py_file": "followup_mr_079.py",
+      "qasm_file": "circuit_mr_079.qasm",
+      "pruned_rank": 58
+    },
+    {
+      "index": 80,
+      "id": "mr_comp_fde58826",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4754,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.545,
+        "unique_gates": 12,
+        "passed_benchmarks": 3,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0233
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.75
+          }
+        },
+        {
+          "mr_id": "QdiffG7CCNOTDecomposition",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_080_mr_comp_fde58826.json",
+      "py_file": "followup_mr_080.py",
+      "qasm_file": "circuit_mr_080.qasm",
+      "pruned_rank": 59
+    },
+    {
+      "index": 83,
+      "id": "mr_comp_886c8302",
+      "signature": "ChangeOptLevel(['levels']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4672,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.4891,
+        "unique_gates": 10,
+        "passed_benchmarks": 3,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0465
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeOptLevel",
+          "params": {
+            "levels": [
+              0,
+              1
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG7CCNOTDecomposition",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_083_mr_comp_886c8302.json",
+      "py_file": "followup_mr_083.py",
+      "qasm_file": "circuit_mr_083.qasm",
+      "pruned_rank": 60
+    },
+    {
+      "index": 84,
+      "id": "mr_comp_81f429c3",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.4669,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.6579,
+        "unique_gates": 6,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.1263
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator_density_matrix",
+              "qasm_simulator",
+              "aer_simulator_matrix_product_state",
+              "aer_simulator_statevector",
+              "aer_simulator"
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG1SwapToCnot",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_084_mr_comp_81f429c3.json",
+      "py_file": "followup_mr_084.py",
+      "qasm_file": "circuit_mr_084.qasm",
+      "pruned_rank": 61
+    },
+    {
+      "index": 85,
+      "id": "mr_comp_38496154",
+      "signature": "ChangeBackend(['available_backends']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 2,
+      "fitness": 0.466,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.7391,
+        "unique_gates": 10,
+        "passed_benchmarks": 5,
+        "novelty": 0.0,
+        "diversity_bonus": 0.125
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "qasm_simulator",
+              "aer_simulator_matrix_product_state",
+              "aer_simulator",
+              "statevector_simulator",
+              "aer_simulator_statevector"
+            ]
+          }
+        },
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.37,
+            "min_connection_density": 0.14,
+            "max_connection_density": 0.29,
+            "force_connected": true
+          }
+        }
+      ],
+      "json_file": "composite_mr_085_mr_comp_38496154.json",
+      "py_file": "followup_mr_085.py",
+      "qasm_file": "circuit_mr_085.qasm",
+      "pruned_rank": 62
+    },
+    {
+      "index": 86,
+      "id": "mr_comp_ade186ce",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.4569,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 6,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0499
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.5
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG1SwapToCnot",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_086_mr_comp_ade186ce.json",
+      "py_file": "followup_mr_086.py",
+      "qasm_file": "circuit_mr_086.qasm",
+      "pruned_rank": 63
+    },
+    {
+      "index": 87,
+      "id": "mr_comp_399efd4f",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.453,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 6,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0341
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "qasm_simulator",
+              "aer_simulator_matrix_product_state",
+              "aer_simulator",
+              "statevector_simulator",
+              "aer_simulator_statevector"
+            ]
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG1SwapToCnot",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_087_mr_comp_399efd4f.json",
+      "py_file": "followup_mr_087.py",
+      "qasm_file": "circuit_mr_087.qasm",
+      "pruned_rank": 64
+    },
+    {
+      "index": 88,
+      "id": "mr_comp_d883215f",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.453,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 6,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0341
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.62,
+            "min_connection_density": 0.15,
+            "max_connection_density": 0.26,
+            "force_connected": true
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "QdiffG1SwapToCnot",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_088_mr_comp_d883215f.json",
+      "py_file": "followup_mr_088.py",
+      "qasm_file": "circuit_mr_088.qasm",
+      "pruned_rank": 65
+    },
+    {
+      "index": 100,
+      "id": "mr_comp_4d337a68",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> ChangeOptLevel(['levels'])",
+      "depth": 2,
+      "fitness": 0.4364,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.7143,
+        "unique_gates": 8,
+        "passed_benchmarks": 1,
+        "novelty": 0.0,
+        "diversity_bonus": 0.0315
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG2TwoHToId",
+          "params": {
+            "add_identity_matrix": true
+          }
+        },
+        {
+          "mr_id": "ChangeOptLevel",
+          "params": {
+            "levels": [
+              2,
+              3,
+              0,
+              1
+            ]
+          }
+        }
+      ],
+      "json_file": "composite_mr_100_mr_comp_4d337a68.json",
+      "py_file": "followup_mr_100.py",
+      "qasm_file": "circuit_mr_100.qasm",
+      "pruned_rank": 66
+    },
+    {
+      "index": 105,
+      "id": "mr_comp_48c9adae",
+      "signature": "ChangeBackend(['available_backends']) -> ChangeOptLevel(['levels'])",
+      "depth": 2,
+      "fitness": 0.4301,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.7069,
+        "unique_gates": 9,
+        "passed_benchmarks": 5,
+        "novelty": 0.0,
+        "diversity_bonus": 0.0134
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator_statevector",
+              "aer_simulator_matrix_product_state",
+              "aer_simulator_density_matrix",
+              "statevector_simulator",
+              "qasm_simulator",
+              "aer_simulator"
+            ]
+          }
+        },
+        {
+          "mr_id": "ChangeOptLevel",
+          "params": {
+            "levels": [
+              0,
+              1
+            ]
+          }
+        }
+      ],
+      "json_file": "composite_mr_105_mr_comp_48c9adae.json",
+      "py_file": "followup_mr_105.py",
+      "qasm_file": "circuit_mr_105.qasm",
+      "pruned_rank": 67
+    },
+    {
+      "index": 108,
+      "id": "mr_comp_5cb514ac",
+      "signature": "ChangeBackend(['available_backends']) -> ChangeOptLevel(['levels']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.4281,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.7069,
+        "unique_gates": 9,
+        "passed_benchmarks": 5,
+        "novelty": 0.0,
+        "diversity_bonus": 0.0054
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator",
+              "aer_simulator_density_matrix",
+              "statevector_simulator",
+              "aer_simulator_statevector",
+              "qasm_simulator"
+            ]
+          }
+        },
+        {
+          "mr_id": "ChangeOptLevel",
+          "params": {
+            "levels": [
+              3,
+              0,
+              1,
+              2
+            ]
+          }
+        },
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.5
+          }
+        }
+      ],
+      "json_file": "composite_mr_108_mr_comp_5cb514ac.json",
+      "py_file": "followup_mr_108.py",
+      "qasm_file": "circuit_mr_108.qasm",
+      "pruned_rank": 68
+    },
+    {
+      "index": 109,
+      "id": "mr_comp_204ed4c2",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeOptLevel(['levels'])",
+      "depth": 2,
+      "fitness": 0.4238,
+      "objectives": {
+        "coverage": 1.0,
+        "cost_efficiency": 0.6757,
+        "unique_gates": 8,
+        "passed_benchmarks": 1,
+        "novelty": 0.0,
+        "diversity_bonus": 0.0194
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeOptLevel",
+          "params": {
+            "levels": [
+              1,
+              0
+            ]
+          }
+        }
+      ],
+      "json_file": "composite_mr_109_mr_comp_204ed4c2.json",
+      "py_file": "followup_mr_109.py",
+      "qasm_file": "circuit_mr_109.qasm",
+      "pruned_rank": 69
+    },
+    {
+      "index": 114,
+      "id": "mr_comp_3803c8ac",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeTargetBasis(['universal_gate_sets'])",
+      "depth": 2,
+      "fitness": 0.4118,
+      "objectives": {
+        "coverage": 0.75,
+        "cost_efficiency": 0.4717,
+        "unique_gates": 6,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0923
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeTargetBasis",
+          "params": {
+            "universal_gate_sets": [
+              {
+                "gates": [
+                  "rx",
+                  "ry",
+                  "rz",
+                  "p",
+                  "cx"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "json_file": "composite_mr_114_mr_comp_3803c8ac.json",
+      "py_file": "followup_mr_114.py",
+      "qasm_file": "circuit_mr_114.qasm",
+      "pruned_rank": 70
+    },
+    {
+      "index": 117,
+      "id": "mr_comp_5375f23a",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4096,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.7353,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.0,
+        "diversity_bonus": 0.0283
+      },
+      "genes": [
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 1.0
+          }
+        },
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        }
+      ],
+      "json_file": "composite_mr_117_mr_comp_5375f23a.json",
+      "py_file": "followup_mr_117.py",
+      "qasm_file": "circuit_mr_117.qasm",
+      "pruned_rank": 71
+    },
+    {
+      "index": 125,
+      "id": "mr_comp_dc94fbf2",
+      "signature": "QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 2,
+      "fitness": 0.402,
+      "objectives": {
+        "coverage": 0.875,
+        "cost_efficiency": 0.6944,
+        "unique_gates": 7,
+        "passed_benchmarks": 1,
+        "novelty": 0.0,
+        "diversity_bonus": 0.0387
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeQubitOrder",
+          "params": {
+            "scramble_percentage": 0.5
+          }
+        }
+      ],
+      "json_file": "composite_mr_125_mr_comp_dc94fbf2.json",
+      "py_file": "followup_mr_125.py",
+      "qasm_file": "circuit_mr_125.qasm",
+      "pruned_rank": 72
+    },
+    {
+      "index": 129,
+      "id": "mr_comp_369f36cd",
+      "signature": "QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeTargetBasis(['universal_gate_sets']) -> ChangeBackend(['available_backends'])",
+      "depth": 3,
+      "fitness": 0.3537,
+      "objectives": {
+        "coverage": 0.625,
+        "cost_efficiency": 0.3846,
+        "unique_gates": 5,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.072
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG5CZtoHCnotH",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeTargetBasis",
+          "params": {
+            "universal_gate_sets": [
+              {
+                "gates": [
+                  "cx",
+                  "h",
+                  "s",
+                  "t"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "mr_id": "ChangeBackend",
+          "params": {
+            "available_backends": [
+              "aer_simulator",
+              "aer_simulator_density_matrix",
+              "statevector_simulator",
+              "aer_simulator_statevector",
+              "qasm_simulator"
+            ]
+          }
+        }
+      ],
+      "json_file": "composite_mr_129_mr_comp_369f36cd.json",
+      "py_file": "followup_mr_129.py",
+      "qasm_file": "circuit_mr_129.qasm",
+      "pruned_rank": 73
+    },
+    {
+      "index": 131,
+      "id": "mr_comp_410214db",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeTargetBasis(['universal_gate_sets']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 3,
+      "fitness": 0.3452,
+      "objectives": {
+        "coverage": 0.625,
+        "cost_efficiency": 0.3846,
+        "unique_gates": 5,
+        "passed_benchmarks": 1,
+        "novelty": 0.3333,
+        "diversity_bonus": 0.0379
+      },
+      "genes": [
+        {
+          "mr_id": "QdiffG4ZtoSS",
+          "params": {
+            "min_to_change": 1,
+            "max_to_change": 1
+          }
+        },
+        {
+          "mr_id": "ChangeTargetBasis",
+          "params": {
+            "universal_gate_sets": [
+              {
+                "gates": [
+                  "cx",
+                  "h",
+                  "s",
+                  "t"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "mr_id": "ChangeCouplingMap",
+          "params": {
+            "min_perc_nodes": 1,
+            "max_perc_nodes": 1.37,
+            "min_connection_density": 0.14,
+            "max_connection_density": 0.29,
+            "force_connected": true
+          }
+        }
+      ],
+      "json_file": "composite_mr_131_mr_comp_410214db.json",
+      "py_file": "followup_mr_131.py",
+      "qasm_file": "circuit_mr_131.qasm",
+      "pruned_rank": 74
+    }
+  ]
+}

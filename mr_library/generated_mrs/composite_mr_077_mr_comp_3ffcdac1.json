@@ -1,0 +1,48 @@
+{
+  "id": "mr_comp_3ffcdac1",
+  "signature": "ChangeBackend(['available_backends']) -> ChangeTargetBasis(['universal_gate_sets'])",
+  "depth": 2,
+  "fitness": 0.479,
+  "objectives": {
+    "coverage": 0.75,
+    "cost_efficiency": 0.5734,
+    "unique_gates": 6,
+    "passed_benchmarks": 5,
+    "novelty": 0.5,
+    "diversity_bonus": 0.0924
+  },
+  "is_valid": true,
+  "generation": 2,
+  "genes": [
+    {
+      "mr_id": "ChangeBackend",
+      "params": {
+        "available_backends": [
+          "qasm_simulator",
+          "aer_simulator_matrix_product_state",
+          "aer_simulator",
+          "statevector_simulator",
+          "aer_simulator_statevector"
+        ]
+      }
+    },
+    {
+      "mr_id": "ChangeTargetBasis",
+      "params": {
+        "universal_gate_sets": [
+          {
+            "gates": [
+              "rx",
+              "ry",
+              "rz",
+              "p",
+              "cx"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 77
+}

@@ -1,0 +1,40 @@
+{
+  "id": "mr_comp_117509d3",
+  "signature": "ChangeBackend(['available_backends']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+  "depth": 2,
+  "fitness": 0.5477,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.545,
+    "unique_gates": 12,
+    "passed_benchmarks": 3,
+    "novelty": 0.5,
+    "diversity_bonus": 0.1458
+  },
+  "is_valid": true,
+  "generation": 1,
+  "genes": [
+    {
+      "mr_id": "ChangeBackend",
+      "params": {
+        "available_backends": [
+          "aer_simulator_statevector",
+          "aer_simulator_matrix_product_state",
+          "statevector_simulator",
+          "aer_simulator_density_matrix",
+          "qasm_simulator",
+          "aer_simulator"
+        ]
+      }
+    },
+    {
+      "mr_id": "QdiffG7CCNOTDecomposition",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 42
+}

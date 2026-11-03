@@ -1,0 +1,37 @@
+{
+  "id": "mr_comp_ef07ecbb",
+  "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+  "depth": 2,
+  "fitness": 0.5913,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7192,
+    "unique_gates": 10,
+    "passed_benchmarks": 3,
+    "novelty": 0.5,
+    "diversity_bonus": 0.1458
+  },
+  "is_valid": true,
+  "generation": 1,
+  "genes": [
+    {
+      "mr_id": "QdiffG3XToHSSH",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    },
+    {
+      "mr_id": "ChangeCouplingMap",
+      "params": {
+        "min_perc_nodes": 1,
+        "max_perc_nodes": 1.37,
+        "min_connection_density": 0.14,
+        "max_connection_density": 0.29,
+        "force_connected": true
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 31
+}

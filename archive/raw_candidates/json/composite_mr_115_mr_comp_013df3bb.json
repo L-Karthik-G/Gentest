@@ -1,0 +1,36 @@
+{
+  "id": "mr_comp_013df3bb",
+  "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG2TwoHToId(['add_identity_matrix'])",
+  "depth": 2,
+  "fitness": 0.4105,
+  "objectives": {
+    "coverage": 0.875,
+    "cost_efficiency": 0.7353,
+    "unique_gates": 7,
+    "passed_benchmarks": 1,
+    "novelty": 0.0,
+    "diversity_bonus": 0.0316
+  },
+  "is_valid": true,
+  "generation": 4,
+  "genes": [
+    {
+      "mr_id": "ChangeCouplingMap",
+      "params": {
+        "min_perc_nodes": 1,
+        "max_perc_nodes": 1.51,
+        "min_connection_density": 0.14,
+        "max_connection_density": 0.21,
+        "force_connected": true
+      }
+    },
+    {
+      "mr_id": "QdiffG2TwoHToId",
+      "params": {
+        "add_identity_matrix": true
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 115
+}

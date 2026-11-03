@@ -1,0 +1,37 @@
+{
+  "id": "mr_comp_4d337a68",
+  "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> ChangeOptLevel(['levels'])",
+  "depth": 2,
+  "fitness": 0.4364,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7143,
+    "unique_gates": 8,
+    "passed_benchmarks": 1,
+    "novelty": 0.0,
+    "diversity_bonus": 0.0315
+  },
+  "is_valid": true,
+  "generation": 7,
+  "genes": [
+    {
+      "mr_id": "QdiffG2TwoHToId",
+      "params": {
+        "add_identity_matrix": true
+      }
+    },
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          2,
+          3,
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 100
+}

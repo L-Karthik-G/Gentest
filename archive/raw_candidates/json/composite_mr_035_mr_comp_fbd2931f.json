@@ -1,0 +1,32 @@
+{
+  "id": "mr_comp_fbd2931f",
+  "signature": "ChangeQubitOrder(['scramble_percentage']) -> ChangeQubitOrder(['scramble_percentage'])",
+  "depth": 2,
+  "fitness": 0.5674,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7391,
+    "unique_gates": 10,
+    "passed_benchmarks": 5,
+    "novelty": 0.5,
+    "diversity_bonus": 0.0303
+  },
+  "is_valid": true,
+  "generation": 2,
+  "genes": [
+    {
+      "mr_id": "ChangeQubitOrder",
+      "params": {
+        "scramble_percentage": 0.5
+      }
+    },
+    {
+      "mr_id": "ChangeQubitOrder",
+      "params": {
+        "scramble_percentage": 0.5
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 35
+}

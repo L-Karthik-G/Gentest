@@ -1,0 +1,37 @@
+{
+  "id": "mr_comp_3b854f93",
+  "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+  "depth": 2,
+  "fitness": 0.9149,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.6597,
+    "unique_gates": 8,
+    "passed_benchmarks": 2,
+    "novelty": 1.0,
+    "diversity_bonus": 1.0
+  },
+  "is_valid": true,
+  "generation": 0,
+  "genes": [
+    {
+      "mr_id": "ChangeCouplingMap",
+      "params": {
+        "min_perc_nodes": 1,
+        "max_perc_nodes": 1.13,
+        "min_connection_density": 0.11,
+        "max_connection_density": 0.28,
+        "force_connected": true
+      }
+    },
+    {
+      "mr_id": "QdiffG1SwapToCnot",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 7
+}

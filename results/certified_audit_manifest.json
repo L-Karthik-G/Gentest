@@ -1,0 +1,2825 @@
+{
+  "manifest_version": "3.0",
+  "manifest_name": "Curated Essential Library Certified Audit",
+  "audited_at": "2026-11-02T18:03:18Z",
+  "total_audited_relations": 74,
+  "verification_tier_distribution": {
+    "PRIMITIVE_SYMBOLIC_CHAIN": 9,
+    "BOUNDED_SUITE_VERIFIED": 30,
+    "EMPIRICALLY_SIMULATED": 35,
+    "FAILED": 0
+  },
+  "overall_pass_rate": "100.0%",
+  "relations": [
+    {
+      "rank": 1,
+      "id": "mr_comp_49a4c2ec",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 2,
+      "fitness": 0.9348,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 29,
+        "passed_circuits": 7,
+        "min_fidelity": 0.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 5,
+        "benchmarks_passed": 5,
+        "mqt_compiled_count": 5,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.15,
+          "min_connection_density": 0.06,
+          "max_connection_density": 0.2,
+          "force_connected": true
+        },
+        {
+          "scramble_percentage": 0.5
+        }
+      ],
+      "json_file": "composite_mr_002_mr_comp_49a4c2ec.json",
+      "qasm_file": "circuit_mr_002.qasm"
+    },
+    {
+      "rank": 2,
+      "id": "mr_comp_d2762bf1",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> ChangeBackend(['available_backends'])",
+      "depth": 2,
+      "fitness": 0.9298,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 3,
+        "benchmarks_passed": 3,
+        "mqt_compiled_count": 3,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "available_backends": [
+            "aer_simulator_statevector",
+            "qasm_simulator",
+            "aer_simulator_density_matrix",
+            "aer_simulator_matrix_product_state"
+          ]
+        }
+      ],
+      "json_file": "composite_mr_005_mr_comp_d2762bf1.json",
+      "qasm_file": "circuit_mr_005.qasm"
+    },
+    {
+      "rank": 3,
+      "id": "mr_comp_f2afe4bd",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.9149,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 0.9992)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 2,
+        "benchmarks_passed": 2,
+        "mqt_compiled_count": 2,
+        "avg_ks_pvalue": 0.9991557181696944,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "available_backends": [
+            "aer_simulator",
+            "aer_simulator_density_matrix",
+            "statevector_simulator",
+            "aer_simulator_statevector",
+            "qasm_simulator"
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_006_mr_comp_f2afe4bd.json",
+      "qasm_file": "circuit_mr_006.qasm"
+    },
+    {
+      "rank": 4,
+      "id": "mr_comp_3b854f93",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.9149,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 0.9861)",
+      "exhaustive_stats": {
+        "tested_circuits": 6,
+        "passed_circuits": 4,
+        "min_fidelity": 0.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 2,
+        "benchmarks_passed": 2,
+        "mqt_compiled_count": 2,
+        "avg_ks_pvalue": 0.9860783062554839,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.13,
+          "min_connection_density": 0.11,
+          "max_connection_density": 0.28,
+          "force_connected": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_007_mr_comp_3b854f93.json",
+      "qasm_file": "circuit_mr_007.qasm"
+    },
+    {
+      "rank": 5,
+      "id": "mr_comp_7c6a0717",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.9026,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 1,
+        "passed_circuits": 1,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "scramble_percentage": 0.5
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_009_mr_comp_7c6a0717.json",
+      "qasm_file": "circuit_mr_009.qasm"
+    },
+    {
+      "rank": 6,
+      "id": "mr_comp_1294b8f3",
+      "signature": "QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.8923,
+      "verification_tier": "PRIMITIVE_SYMBOLIC_CHAIN",
+      "verification_method": "Composition of exact symbolic gate identities (each primitive gate rewrite proven identically zero in SymPy: U1 - U2 == 0)",
+      "exhaustive_stats": {
+        "tested_circuits": 1,
+        "passed_circuits": 1,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_010_mr_comp_1294b8f3.json",
+      "qasm_file": "circuit_mr_010.qasm"
+    },
+    {
+      "rank": 7,
+      "id": "mr_comp_bc533f61",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.8923,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 1,
+        "passed_circuits": 1,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "scramble_percentage": 0.75
+        }
+      ],
+      "json_file": "composite_mr_011_mr_comp_bc533f61.json",
+      "qasm_file": "circuit_mr_011.qasm"
+    },
+    {
+      "rank": 8,
+      "id": "mr_comp_19292182",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeBackend(['available_backends'])",
+      "depth": 3,
+      "fitness": 0.8923,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "available_backends": [
+            "qasm_simulator",
+            "aer_simulator",
+            "aer_simulator_matrix_product_state",
+            "aer_simulator_statevector",
+            "statevector_simulator",
+            "aer_simulator_density_matrix"
+          ]
+        }
+      ],
+      "json_file": "composite_mr_012_mr_comp_19292182.json",
+      "qasm_file": "circuit_mr_012.qasm"
+    },
+    {
+      "rank": 9,
+      "id": "mr_comp_047402b4",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeOptLevel(['levels']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.8873,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 2,
+        "passed_circuits": 1,
+        "min_fidelity": 0.25
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 3,
+        "benchmarks_passed": 3,
+        "mqt_compiled_count": 3,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.49,
+          "min_connection_density": 0.05,
+          "max_connection_density": 0.22,
+          "force_connected": true
+        },
+        {
+          "levels": [
+            1
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_013_mr_comp_047402b4.json",
+      "qasm_file": "circuit_mr_013.qasm"
+    },
+    {
+      "rank": 10,
+      "id": "mr_comp_c5959a7f",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.8802,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "add_identity_matrix": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_014_mr_comp_c5959a7f.json",
+      "qasm_file": "circuit_mr_014.qasm"
+    },
+    {
+      "rank": 11,
+      "id": "mr_comp_ca46fe5b",
+      "signature": "QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeOptLevel(['levels'])",
+      "depth": 2,
+      "fitness": 0.8661,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "levels": [
+            0,
+            2,
+            1,
+            3
+          ]
+        }
+      ],
+      "json_file": "composite_mr_016_mr_comp_ca46fe5b.json",
+      "qasm_file": "circuit_mr_016.qasm"
+    },
+    {
+      "rank": 12,
+      "id": "mr_comp_ab7115f2",
+      "signature": "QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.8611,
+      "verification_tier": "PRIMITIVE_SYMBOLIC_CHAIN",
+      "verification_method": "Composition of exact symbolic gate identities (each primitive gate rewrite proven identically zero in SymPy: U1 - U2 == 0)",
+      "exhaustive_stats": {
+        "tested_circuits": 1,
+        "passed_circuits": 1,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_017_mr_comp_ab7115f2.json",
+      "qasm_file": "circuit_mr_017.qasm"
+    },
+    {
+      "rank": 13,
+      "id": "mr_comp_ae727414",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.8611,
+      "verification_tier": "PRIMITIVE_SYMBOLIC_CHAIN",
+      "verification_method": "Composition of exact symbolic gate identities (each primitive gate rewrite proven identically zero in SymPy: U1 - U2 == 0)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "add_identity_matrix": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_018_mr_comp_ae727414.json",
+      "qasm_file": "circuit_mr_018.qasm"
+    },
+    {
+      "rank": 14,
+      "id": "mr_comp_0cd8b292",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.8611,
+      "verification_tier": "PRIMITIVE_SYMBOLIC_CHAIN",
+      "verification_method": "Composition of exact symbolic gate identities (each primitive gate rewrite proven identically zero in SymPy: U1 - U2 == 0)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_019_mr_comp_0cd8b292.json",
+      "qasm_file": "circuit_mr_019.qasm"
+    },
+    {
+      "rank": 15,
+      "id": "mr_comp_cba230cb",
+      "signature": "ChangeTargetBasis(['universal_gate_sets']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 2,
+      "fitness": 0.8308,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 29,
+        "passed_circuits": 7,
+        "min_fidelity": 0.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 5,
+        "benchmarks_passed": 5,
+        "mqt_compiled_count": 5,
+        "avg_ks_pvalue": 0.9999999901937325,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "universal_gate_sets": [
+            {
+              "gates": [
+                "rx",
+                "ry",
+                "rz",
+                "p",
+                "cx"
+              ]
+            }
+          ]
+        },
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.18,
+          "min_connection_density": 0.12,
+          "max_connection_density": 0.2,
+          "force_connected": true
+        }
+      ],
+      "json_file": "composite_mr_021_mr_comp_cba230cb.json",
+      "qasm_file": "circuit_mr_021.qasm"
+    },
+    {
+      "rank": 16,
+      "id": "mr_comp_74bc0302",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.7703,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 0.9999972203378801,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "available_backends": [
+            "aer_simulator_density_matrix",
+            "aer_simulator",
+            "aer_simulator_statevector",
+            "qasm_simulator",
+            "statevector_simulator",
+            "aer_simulator_matrix_product_state"
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_023_mr_comp_74bc0302.json",
+      "qasm_file": "circuit_mr_023.qasm"
+    },
+    {
+      "rank": 17,
+      "id": "mr_comp_f846b66c",
+      "signature": "ChangeTargetBasis(['universal_gate_sets']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.7524,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 1,
+        "passed_circuits": 1,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "universal_gate_sets": [
+            {
+              "gates": [
+                "cx",
+                "h",
+                "s",
+                "t"
+              ]
+            }
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_024_mr_comp_f846b66c.json",
+      "qasm_file": "circuit_mr_024.qasm"
+    },
+    {
+      "rank": 18,
+      "id": "mr_comp_ec473e1b",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> ChangeTargetBasis(['universal_gate_sets']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.7524,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "scramble_percentage": 0.75
+        },
+        {
+          "universal_gate_sets": [
+            {
+              "gates": [
+                "cx",
+                "h",
+                "s",
+                "t"
+              ]
+            }
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_025_mr_comp_ec473e1b.json",
+      "qasm_file": "circuit_mr_025.qasm"
+    },
+    {
+      "rank": 19,
+      "id": "mr_comp_cddfe976",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.6163,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 0.8405)",
+      "exhaustive_stats": {
+        "tested_circuits": 6,
+        "passed_circuits": 4,
+        "min_fidelity": 0.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 2,
+        "benchmarks_passed": 2,
+        "mqt_compiled_count": 2,
+        "avg_ks_pvalue": 0.8404513921780643,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "scramble_percentage": 0.5
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_026_mr_comp_cddfe976.json",
+      "qasm_file": "circuit_mr_026.qasm"
+    },
+    {
+      "rank": 20,
+      "id": "mr_comp_ab35a71f",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeOptLevel(['levels']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.6018,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 4,
+        "passed_circuits": 3,
+        "min_fidelity": 0.25
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 3,
+        "benchmarks_passed": 3,
+        "mqt_compiled_count": 3,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.62,
+          "min_connection_density": 0.15,
+          "max_connection_density": 0.26,
+          "force_connected": true
+        },
+        {
+          "levels": [
+            1
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_028_mr_comp_ab35a71f.json",
+      "qasm_file": "circuit_mr_028.qasm"
+    },
+    {
+      "rank": 21,
+      "id": "mr_comp_4d5da92d",
+      "signature": "ChangeBackend(['available_backends']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 2,
+      "fitness": 0.5962,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 0.9998)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 5,
+        "benchmarks_passed": 5,
+        "mqt_compiled_count": 5,
+        "avg_ks_pvalue": 0.9997876150064242,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "available_backends": [
+            "qasm_simulator",
+            "aer_simulator_matrix_product_state",
+            "aer_simulator",
+            "statevector_simulator",
+            "aer_simulator_statevector"
+          ]
+        },
+        {
+          "scramble_percentage": 0.5
+        }
+      ],
+      "json_file": "composite_mr_029_mr_comp_4d5da92d.json",
+      "qasm_file": "circuit_mr_029.qasm"
+    },
+    {
+      "rank": 22,
+      "id": "mr_comp_43a3a816",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5913,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 4,
+        "passed_circuits": 4,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 3,
+        "benchmarks_passed": 3,
+        "mqt_compiled_count": 3,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.51,
+          "min_connection_density": 0.14,
+          "max_connection_density": 0.21,
+          "force_connected": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_030_mr_comp_43a3a816.json",
+      "qasm_file": "circuit_mr_030.qasm"
+    },
+    {
+      "rank": 23,
+      "id": "mr_comp_951f81a4",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 2,
+      "fitness": 0.5682,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "add_identity_matrix": true
+        },
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.37,
+          "min_connection_density": 0.14,
+          "max_connection_density": 0.29,
+          "force_connected": true
+        }
+      ],
+      "json_file": "composite_mr_033_mr_comp_951f81a4.json",
+      "qasm_file": "circuit_mr_033.qasm"
+    },
+    {
+      "rank": 24,
+      "id": "mr_comp_61af2f68",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> ChangeBackend(['available_backends'])",
+      "depth": 2,
+      "fitness": 0.5682,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "add_identity_matrix": true
+        },
+        {
+          "available_backends": [
+            "aer_simulator_statevector",
+            "qasm_simulator",
+            "aer_simulator_density_matrix",
+            "aer_simulator_matrix_product_state"
+          ]
+        }
+      ],
+      "json_file": "composite_mr_034_mr_comp_61af2f68.json",
+      "qasm_file": "circuit_mr_034.qasm"
+    },
+    {
+      "rank": 25,
+      "id": "mr_comp_e1c8ec9b",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5588,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.15,
+          "min_connection_density": 0.06,
+          "max_connection_density": 0.2,
+          "force_connected": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_036_mr_comp_e1c8ec9b.json",
+      "qasm_file": "circuit_mr_036.qasm"
+    },
+    {
+      "rank": 26,
+      "id": "mr_comp_fb5061d6",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeBackend(['available_backends'])",
+      "depth": 3,
+      "fitness": 0.5563,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "add_identity_matrix": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "available_backends": [
+            "aer_simulator_matrix_product_state"
+          ]
+        }
+      ],
+      "json_file": "composite_mr_038_mr_comp_fb5061d6.json",
+      "qasm_file": "circuit_mr_038.qasm"
+    },
+    {
+      "rank": 27,
+      "id": "mr_comp_e83a3f19",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 2,
+      "fitness": 0.5548,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 4,
+        "passed_circuits": 4,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 3,
+        "benchmarks_passed": 2,
+        "mqt_compiled_count": 3,
+        "avg_ks_pvalue": 0.6665449108477141,
+        "failure_reasons": [
+          "KS-test failed on adder_3qubit (p-value=0.0000e+00 <= 0.05)"
+        ]
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "scramble_percentage": 0.75
+        }
+      ],
+      "json_file": "composite_mr_039_mr_comp_e83a3f19.json",
+      "qasm_file": "circuit_mr_039.qasm"
+    },
+    {
+      "rank": 28,
+      "id": "mr_comp_b77d0a8b",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.5536,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 1,
+        "passed_circuits": 1,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "scramble_percentage": 0.75
+        }
+      ],
+      "json_file": "composite_mr_040_mr_comp_b77d0a8b.json",
+      "qasm_file": "circuit_mr_040.qasm"
+    },
+    {
+      "rank": 29,
+      "id": "mr_comp_c5c3cd1f",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.5491,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 1,
+        "passed_circuits": 1,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 0,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 0.0,
+        "failure_reasons": [
+          "KS-test failed on ghz_state (p-value=0.0000e+00 <= 0.05)"
+        ]
+      },
+      "parameters": [
+        {
+          "scramble_percentage": 1.0
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_041_mr_comp_c5c3cd1f.json",
+      "qasm_file": "circuit_mr_041.qasm"
+    },
+    {
+      "rank": 30,
+      "id": "mr_comp_117509d3",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5477,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 3,
+        "benchmarks_passed": 3,
+        "mqt_compiled_count": 3,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "available_backends": [
+            "aer_simulator_statevector",
+            "aer_simulator_matrix_product_state",
+            "statevector_simulator",
+            "aer_simulator_density_matrix",
+            "qasm_simulator",
+            "aer_simulator"
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_042_mr_comp_117509d3.json",
+      "qasm_file": "circuit_mr_042.qasm"
+    },
+    {
+      "rank": 31,
+      "id": "mr_comp_60c3c3ab",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5357,
+      "verification_tier": "PRIMITIVE_SYMBOLIC_CHAIN",
+      "verification_method": "Composition of exact symbolic gate identities (each primitive gate rewrite proven identically zero in SymPy: U1 - U2 == 0)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "add_identity_matrix": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_043_mr_comp_60c3c3ab.json",
+      "qasm_file": "circuit_mr_043.qasm"
+    },
+    {
+      "rank": 32,
+      "id": "mr_comp_4ca21914",
+      "signature": "ChangeOptLevel(['levels']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 2,
+      "fitness": 0.5344,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 29,
+        "passed_circuits": 7,
+        "min_fidelity": 0.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 5,
+        "benchmarks_passed": 5,
+        "mqt_compiled_count": 5,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "levels": [
+            0,
+            2
+          ]
+        },
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.39,
+          "min_connection_density": 0.09,
+          "max_connection_density": 0.22,
+          "force_connected": true
+        }
+      ],
+      "json_file": "composite_mr_044_mr_comp_4ca21914.json",
+      "qasm_file": "circuit_mr_044.qasm"
+    },
+    {
+      "rank": 33,
+      "id": "mr_comp_23ef6adb",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.5241,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "scramble_percentage": 0.5
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "scramble_percentage": 0.5
+        }
+      ],
+      "json_file": "composite_mr_047_mr_comp_23ef6adb.json",
+      "qasm_file": "circuit_mr_047.qasm"
+    },
+    {
+      "rank": 34,
+      "id": "mr_comp_eb50c886",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> ChangeTargetBasis(['universal_gate_sets'])",
+      "depth": 2,
+      "fitness": 0.5221,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "add_identity_matrix": true
+        },
+        {
+          "universal_gate_sets": [
+            {
+              "gates": [
+                "rx",
+                "ry",
+                "rz",
+                "p",
+                "cx"
+              ]
+            }
+          ]
+        }
+      ],
+      "json_file": "composite_mr_049_mr_comp_eb50c886.json",
+      "qasm_file": "circuit_mr_049.qasm"
+    },
+    {
+      "rank": 35,
+      "id": "mr_comp_f7d13c73",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.5206,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "available_backends": [
+            "aer_simulator",
+            "aer_simulator_density_matrix",
+            "statevector_simulator",
+            "aer_simulator_statevector",
+            "qasm_simulator"
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_051_mr_comp_f7d13c73.json",
+      "qasm_file": "circuit_mr_051.qasm"
+    },
+    {
+      "rank": 36,
+      "id": "mr_comp_091836d2",
+      "signature": "ChangeOptLevel(['levels']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5191,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 4,
+        "passed_circuits": 3,
+        "min_fidelity": 0.25
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 3,
+        "benchmarks_passed": 3,
+        "mqt_compiled_count": 3,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "levels": [
+            0,
+            2,
+            3,
+            1
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_052_mr_comp_091836d2.json",
+      "qasm_file": "circuit_mr_052.qasm"
+    },
+    {
+      "rank": 37,
+      "id": "mr_comp_27d8b7b8",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5183,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 2,
+        "passed_circuits": 2,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 3,
+        "benchmarks_passed": 3,
+        "mqt_compiled_count": 3,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_053_mr_comp_27d8b7b8.json",
+      "qasm_file": "circuit_mr_053.qasm"
+    },
+    {
+      "rank": 38,
+      "id": "mr_comp_6c727e0e",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.5154,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "scramble_percentage": 0.5
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "scramble_percentage": 0.75
+        }
+      ],
+      "json_file": "composite_mr_054_mr_comp_6c727e0e.json",
+      "qasm_file": "circuit_mr_054.qasm"
+    },
+    {
+      "rank": 39,
+      "id": "mr_comp_da5de3fa",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeBackend(['available_backends'])",
+      "depth": 3,
+      "fitness": 0.5119,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "available_backends": [
+            "aer_simulator_matrix_product_state"
+          ]
+        }
+      ],
+      "json_file": "composite_mr_056_mr_comp_da5de3fa.json",
+      "qasm_file": "circuit_mr_056.qasm"
+    },
+    {
+      "rank": 40,
+      "id": "mr_comp_0bf7305c",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.5119,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.13,
+          "min_connection_density": 0.11,
+          "max_connection_density": 0.28,
+          "force_connected": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "scramble_percentage": 0.75
+        }
+      ],
+      "json_file": "composite_mr_057_mr_comp_0bf7305c.json",
+      "qasm_file": "circuit_mr_057.qasm"
+    },
+    {
+      "rank": 41,
+      "id": "mr_comp_821ad5e0",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> ChangeOptLevel(['levels']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.5117,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.25,
+          "min_connection_density": 0.09,
+          "max_connection_density": 0.24,
+          "force_connected": true
+        },
+        {
+          "levels": [
+            3,
+            0,
+            1
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_058_mr_comp_821ad5e0.json",
+      "qasm_file": "circuit_mr_058.qasm"
+    },
+    {
+      "rank": 42,
+      "id": "mr_comp_8d2a65dc",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5052,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 2,
+        "passed_circuits": 2,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 3,
+        "benchmarks_passed": 3,
+        "mqt_compiled_count": 3,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.13,
+          "min_connection_density": 0.11,
+          "max_connection_density": 0.28,
+          "force_connected": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_060_mr_comp_8d2a65dc.json",
+      "qasm_file": "circuit_mr_060.qasm"
+    },
+    {
+      "rank": 43,
+      "id": "mr_comp_e4f97cb2",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.505,
+      "verification_tier": "PRIMITIVE_SYMBOLIC_CHAIN",
+      "verification_method": "Composition of exact symbolic gate identities (each primitive gate rewrite proven identically zero in SymPy: U1 - U2 == 0)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 2,
+        "benchmarks_passed": 2,
+        "mqt_compiled_count": 2,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_061_mr_comp_e4f97cb2.json",
+      "qasm_file": "circuit_mr_061.qasm"
+    },
+    {
+      "rank": 44,
+      "id": "mr_comp_ef8c040c",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.5016,
+      "verification_tier": "PRIMITIVE_SYMBOLIC_CHAIN",
+      "verification_method": "Composition of exact symbolic gate identities (each primitive gate rewrite proven identically zero in SymPy: U1 - U2 == 0)",
+      "exhaustive_stats": {
+        "tested_circuits": 1,
+        "passed_circuits": 1,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_062_mr_comp_ef8c040c.json",
+      "qasm_file": "circuit_mr_062.qasm"
+    },
+    {
+      "rank": 45,
+      "id": "mr_comp_6fc6b65f",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> ChangeOptLevel(['levels']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.4995,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 4,
+        "passed_circuits": 3,
+        "min_fidelity": 0.25
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 3,
+        "benchmarks_passed": 3,
+        "mqt_compiled_count": 3,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "levels": [
+            0,
+            3,
+            2,
+            1
+          ]
+        },
+        {
+          "scramble_percentage": 0.5
+        }
+      ],
+      "json_file": "composite_mr_063_mr_comp_6fc6b65f.json",
+      "qasm_file": "circuit_mr_063.qasm"
+    },
+    {
+      "rank": 46,
+      "id": "mr_comp_235638fe",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeBackend(['available_backends'])",
+      "depth": 2,
+      "fitness": 0.4965,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "available_backends": [
+            "aer_simulator_statevector",
+            "qasm_simulator",
+            "aer_simulator_density_matrix",
+            "aer_simulator_matrix_product_state"
+          ]
+        }
+      ],
+      "json_file": "composite_mr_064_mr_comp_235638fe.json",
+      "qasm_file": "circuit_mr_064.qasm"
+    },
+    {
+      "rank": 47,
+      "id": "mr_comp_757caebf",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.4955,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "available_backends": [
+            "aer_simulator",
+            "aer_simulator_density_matrix",
+            "statevector_simulator",
+            "aer_simulator_statevector",
+            "qasm_simulator"
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "scramble_percentage": 0.75
+        }
+      ],
+      "json_file": "composite_mr_066_mr_comp_757caebf.json",
+      "qasm_file": "circuit_mr_066.qasm"
+    },
+    {
+      "rank": 48,
+      "id": "mr_comp_4052c8bb",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4945,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "add_identity_matrix": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_067_mr_comp_4052c8bb.json",
+      "qasm_file": "circuit_mr_067.qasm"
+    },
+    {
+      "rank": 49,
+      "id": "mr_comp_5b0d7143",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4914,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 1,
+        "passed_circuits": 1,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_068_mr_comp_5b0d7143.json",
+      "qasm_file": "circuit_mr_068.qasm"
+    },
+    {
+      "rank": 50,
+      "id": "mr_comp_d251dc40",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 3,
+      "fitness": 0.4912,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "available_backends": [
+            "aer_simulator",
+            "aer_simulator_density_matrix",
+            "statevector_simulator",
+            "aer_simulator_statevector",
+            "qasm_simulator"
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.37,
+          "min_connection_density": 0.14,
+          "max_connection_density": 0.29,
+          "force_connected": true
+        }
+      ],
+      "json_file": "composite_mr_069_mr_comp_d251dc40.json",
+      "qasm_file": "circuit_mr_069.qasm"
+    },
+    {
+      "rank": 51,
+      "id": "mr_comp_f226e1bf",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.4885,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 0,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 0.0,
+        "failure_reasons": [
+          "KS-test failed on ghz_state (p-value=0.0000e+00 <= 0.05)"
+        ]
+      },
+      "parameters": [
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.26,
+          "min_connection_density": 0.06,
+          "max_connection_density": 0.11,
+          "force_connected": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "scramble_percentage": 0.75
+        }
+      ],
+      "json_file": "composite_mr_071_mr_comp_f226e1bf.json",
+      "qasm_file": "circuit_mr_071.qasm"
+    },
+    {
+      "rank": 52,
+      "id": "mr_comp_3be855ec",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4833,
+      "verification_tier": "PRIMITIVE_SYMBOLIC_CHAIN",
+      "verification_method": "Composition of exact symbolic gate identities (each primitive gate rewrite proven identically zero in SymPy: U1 - U2 == 0)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "add_identity_matrix": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_073_mr_comp_3be855ec.json",
+      "qasm_file": "circuit_mr_073.qasm"
+    },
+    {
+      "rank": 53,
+      "id": "mr_comp_89663f0d",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4828,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.49,
+          "min_connection_density": 0.09,
+          "max_connection_density": 0.28,
+          "force_connected": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_074_mr_comp_89663f0d.json",
+      "qasm_file": "circuit_mr_074.qasm"
+    },
+    {
+      "rank": 54,
+      "id": "mr_comp_b78e2e21",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.48,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "available_backends": [
+            "qasm_simulator",
+            "aer_simulator_matrix_product_state",
+            "aer_simulator"
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_075_mr_comp_b78e2e21.json",
+      "qasm_file": "circuit_mr_075.qasm"
+    },
+    {
+      "rank": 55,
+      "id": "mr_comp_6b90d22a",
+      "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4792,
+      "verification_tier": "PRIMITIVE_SYMBOLIC_CHAIN",
+      "verification_method": "Composition of exact symbolic gate identities (each primitive gate rewrite proven identically zero in SymPy: U1 - U2 == 0)",
+      "exhaustive_stats": {
+        "tested_circuits": 2,
+        "passed_circuits": 2,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_076_mr_comp_6b90d22a.json",
+      "qasm_file": "circuit_mr_076.qasm"
+    },
+    {
+      "rank": 56,
+      "id": "mr_comp_3ffcdac1",
+      "signature": "ChangeBackend(['available_backends']) -> ChangeTargetBasis(['universal_gate_sets'])",
+      "depth": 2,
+      "fitness": 0.479,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 5,
+        "benchmarks_passed": 5,
+        "mqt_compiled_count": 5,
+        "avg_ks_pvalue": 0.999990605633497,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "available_backends": [
+            "qasm_simulator",
+            "aer_simulator_matrix_product_state",
+            "aer_simulator",
+            "statevector_simulator",
+            "aer_simulator_statevector"
+          ]
+        },
+        {
+          "universal_gate_sets": [
+            {
+              "gates": [
+                "rx",
+                "ry",
+                "rz",
+                "p",
+                "cx"
+              ]
+            }
+          ]
+        }
+      ],
+      "json_file": "composite_mr_077_mr_comp_3ffcdac1.json",
+      "qasm_file": "circuit_mr_077.qasm"
+    },
+    {
+      "rank": 57,
+      "id": "mr_comp_80493143",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.4759,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 1,
+        "passed_circuits": 1,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.26,
+          "min_connection_density": 0.06,
+          "max_connection_density": 0.11,
+          "force_connected": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_078_mr_comp_80493143.json",
+      "qasm_file": "circuit_mr_078.qasm"
+    },
+    {
+      "rank": 58,
+      "id": "mr_comp_a21b790b",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeOptLevel(['levels']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.4754,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 0,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 0.0,
+        "failure_reasons": [
+          "KS-test failed on ghz_state (p-value=0.0000e+00 <= 0.05)"
+        ]
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "levels": [
+            1
+          ]
+        },
+        {
+          "scramble_percentage": 1.0
+        }
+      ],
+      "json_file": "composite_mr_079_mr_comp_a21b790b.json",
+      "qasm_file": "circuit_mr_079.qasm"
+    },
+    {
+      "rank": 59,
+      "id": "mr_comp_fde58826",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4754,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 2,
+        "passed_circuits": 2,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 3,
+        "benchmarks_passed": 3,
+        "mqt_compiled_count": 3,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "scramble_percentage": 0.75
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_080_mr_comp_fde58826.json",
+      "qasm_file": "circuit_mr_080.qasm"
+    },
+    {
+      "rank": 60,
+      "id": "mr_comp_886c8302",
+      "signature": "ChangeOptLevel(['levels']) -> QdiffG7CCNOTDecomposition(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4672,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 2,
+        "passed_circuits": 2,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 3,
+        "benchmarks_passed": 3,
+        "mqt_compiled_count": 3,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "levels": [
+            0,
+            1
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_083_mr_comp_886c8302.json",
+      "qasm_file": "circuit_mr_083.qasm"
+    },
+    {
+      "rank": 61,
+      "id": "mr_comp_81f429c3",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change']) -> QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.4669,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "available_backends": [
+            "aer_simulator_density_matrix",
+            "qasm_simulator",
+            "aer_simulator_matrix_product_state",
+            "aer_simulator_statevector",
+            "aer_simulator"
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_084_mr_comp_81f429c3.json",
+      "qasm_file": "circuit_mr_084.qasm"
+    },
+    {
+      "rank": 62,
+      "id": "mr_comp_38496154",
+      "signature": "ChangeBackend(['available_backends']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 2,
+      "fitness": 0.466,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 5,
+        "benchmarks_passed": 5,
+        "mqt_compiled_count": 5,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "available_backends": [
+            "qasm_simulator",
+            "aer_simulator_matrix_product_state",
+            "aer_simulator",
+            "statevector_simulator",
+            "aer_simulator_statevector"
+          ]
+        },
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.37,
+          "min_connection_density": 0.14,
+          "max_connection_density": 0.29,
+          "force_connected": true
+        }
+      ],
+      "json_file": "composite_mr_085_mr_comp_38496154.json",
+      "qasm_file": "circuit_mr_085.qasm"
+    },
+    {
+      "rank": 63,
+      "id": "mr_comp_ade186ce",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.4569,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 1,
+        "passed_circuits": 1,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "scramble_percentage": 0.5
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_086_mr_comp_ade186ce.json",
+      "qasm_file": "circuit_mr_086.qasm"
+    },
+    {
+      "rank": 64,
+      "id": "mr_comp_399efd4f",
+      "signature": "ChangeBackend(['available_backends']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.453,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "available_backends": [
+            "qasm_simulator",
+            "aer_simulator_matrix_product_state",
+            "aer_simulator",
+            "statevector_simulator",
+            "aer_simulator_statevector"
+          ]
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_087_mr_comp_399efd4f.json",
+      "qasm_file": "circuit_mr_087.qasm"
+    },
+    {
+      "rank": 65,
+      "id": "mr_comp_d883215f",
+      "signature": "ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> QdiffG1SwapToCnot(['min_to_change', 'max_to_change'])",
+      "depth": 3,
+      "fitness": 0.453,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 1,
+        "passed_circuits": 1,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.62,
+          "min_connection_density": 0.15,
+          "max_connection_density": 0.26,
+          "force_connected": true
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_088_mr_comp_d883215f.json",
+      "qasm_file": "circuit_mr_088.qasm"
+    },
+    {
+      "rank": 66,
+      "id": "mr_comp_4d337a68",
+      "signature": "QdiffG2TwoHToId(['add_identity_matrix']) -> ChangeOptLevel(['levels'])",
+      "depth": 2,
+      "fitness": 0.4364,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "add_identity_matrix": true
+        },
+        {
+          "levels": [
+            2,
+            3,
+            0,
+            1
+          ]
+        }
+      ],
+      "json_file": "composite_mr_100_mr_comp_4d337a68.json",
+      "qasm_file": "circuit_mr_100.qasm"
+    },
+    {
+      "rank": 67,
+      "id": "mr_comp_48c9adae",
+      "signature": "ChangeBackend(['available_backends']) -> ChangeOptLevel(['levels'])",
+      "depth": 2,
+      "fitness": 0.4301,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 5,
+        "benchmarks_passed": 5,
+        "mqt_compiled_count": 5,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "available_backends": [
+            "aer_simulator_statevector",
+            "aer_simulator_matrix_product_state",
+            "aer_simulator_density_matrix",
+            "statevector_simulator",
+            "qasm_simulator",
+            "aer_simulator"
+          ]
+        },
+        {
+          "levels": [
+            0,
+            1
+          ]
+        }
+      ],
+      "json_file": "composite_mr_105_mr_comp_48c9adae.json",
+      "qasm_file": "circuit_mr_105.qasm"
+    },
+    {
+      "rank": 68,
+      "id": "mr_comp_5cb514ac",
+      "signature": "ChangeBackend(['available_backends']) -> ChangeOptLevel(['levels']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 3,
+      "fitness": 0.4281,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 0.9645)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 5,
+        "benchmarks_passed": 5,
+        "mqt_compiled_count": 5,
+        "avg_ks_pvalue": 0.9645310979135561,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "available_backends": [
+            "aer_simulator",
+            "aer_simulator_density_matrix",
+            "statevector_simulator",
+            "aer_simulator_statevector",
+            "qasm_simulator"
+          ]
+        },
+        {
+          "levels": [
+            3,
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "scramble_percentage": 0.5
+        }
+      ],
+      "json_file": "composite_mr_108_mr_comp_5cb514ac.json",
+      "qasm_file": "circuit_mr_108.qasm"
+    },
+    {
+      "rank": 69,
+      "id": "mr_comp_204ed4c2",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeOptLevel(['levels'])",
+      "depth": 2,
+      "fitness": 0.4238,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "levels": [
+            1,
+            0
+          ]
+        }
+      ],
+      "json_file": "composite_mr_109_mr_comp_204ed4c2.json",
+      "qasm_file": "circuit_mr_109.qasm"
+    },
+    {
+      "rank": 70,
+      "id": "mr_comp_3803c8ac",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeTargetBasis(['universal_gate_sets'])",
+      "depth": 2,
+      "fitness": 0.4118,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "universal_gate_sets": [
+            {
+              "gates": [
+                "rx",
+                "ry",
+                "rz",
+                "p",
+                "cx"
+              ]
+            }
+          ]
+        }
+      ],
+      "json_file": "composite_mr_114_mr_comp_3803c8ac.json",
+      "qasm_file": "circuit_mr_114.qasm"
+    },
+    {
+      "rank": 71,
+      "id": "mr_comp_5375f23a",
+      "signature": "ChangeQubitOrder(['scramble_percentage']) -> QdiffG4ZtoSS(['min_to_change', 'max_to_change'])",
+      "depth": 2,
+      "fitness": 0.4096,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 0,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 0.0,
+        "failure_reasons": [
+          "KS-test failed on ghz_state (p-value=0.0000e+00 <= 0.05)"
+        ]
+      },
+      "parameters": [
+        {
+          "scramble_percentage": 1.0
+        },
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        }
+      ],
+      "json_file": "composite_mr_117_mr_comp_5375f23a.json",
+      "qasm_file": "circuit_mr_117.qasm"
+    },
+    {
+      "rank": 72,
+      "id": "mr_comp_dc94fbf2",
+      "signature": "QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeQubitOrder(['scramble_percentage'])",
+      "depth": 2,
+      "fitness": 0.402,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "scramble_percentage": 0.5
+        }
+      ],
+      "json_file": "composite_mr_125_mr_comp_dc94fbf2.json",
+      "qasm_file": "circuit_mr_125.qasm"
+    },
+    {
+      "rank": 73,
+      "id": "mr_comp_369f36cd",
+      "signature": "QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeTargetBasis(['universal_gate_sets']) -> ChangeBackend(['available_backends'])",
+      "depth": 3,
+      "fitness": 0.3537,
+      "verification_tier": "EMPIRICALLY_SIMULATED",
+      "verification_method": "Multi-benchmark MQT-CC MLIR compilation + KS-test (5 benchmarks, p > 0.05, Avg p-val = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 0,
+        "passed_circuits": 0,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "universal_gate_sets": [
+            {
+              "gates": [
+                "cx",
+                "h",
+                "s",
+                "t"
+              ]
+            }
+          ]
+        },
+        {
+          "available_backends": [
+            "aer_simulator",
+            "aer_simulator_density_matrix",
+            "statevector_simulator",
+            "aer_simulator_statevector",
+            "qasm_simulator"
+          ]
+        }
+      ],
+      "json_file": "composite_mr_129_mr_comp_369f36cd.json",
+      "qasm_file": "circuit_mr_129.qasm"
+    },
+    {
+      "rank": 74,
+      "id": "mr_comp_410214db",
+      "signature": "QdiffG4ZtoSS(['min_to_change', 'max_to_change']) -> ChangeTargetBasis(['universal_gate_sets']) -> ChangeCouplingMap(['min_perc_nodes', 'max_perc_nodes', 'min_connection_density', 'max_connection_density', 'force_connected'])",
+      "depth": 3,
+      "fitness": 0.3452,
+      "verification_tier": "BOUNDED_SUITE_VERIFIED",
+      "verification_method": "Bounded combinatorial test suite (29 canonical circuits <= 4q, depth <= 5; Min Statevector Fidelity = 1.0000)",
+      "exhaustive_stats": {
+        "tested_circuits": 3,
+        "passed_circuits": 3,
+        "min_fidelity": 1.0
+      },
+      "empirical_stats": {
+        "benchmarks_tested": 1,
+        "benchmarks_passed": 1,
+        "mqt_compiled_count": 1,
+        "avg_ks_pvalue": 1.0,
+        "failure_reasons": []
+      },
+      "parameters": [
+        {
+          "min_to_change": 1,
+          "max_to_change": 1
+        },
+        {
+          "universal_gate_sets": [
+            {
+              "gates": [
+                "cx",
+                "h",
+                "s",
+                "t"
+              ]
+            }
+          ]
+        },
+        {
+          "min_perc_nodes": 1,
+          "max_perc_nodes": 1.37,
+          "min_connection_density": 0.14,
+          "max_connection_density": 0.29,
+          "force_connected": true
+        }
+      ],
+      "json_file": "composite_mr_131_mr_comp_410214db.json",
+      "qasm_file": "circuit_mr_131.qasm"
+    }
+  ]
+}

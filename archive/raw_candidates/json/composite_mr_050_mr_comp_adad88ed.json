@@ -1,0 +1,36 @@
+{
+  "id": "mr_comp_adad88ed",
+  "signature": "ChangeQubitOrder(['scramble_percentage']) -> ChangeOptLevel(['levels'])",
+  "depth": 2,
+  "fitness": 0.5216,
+  "objectives": {
+    "coverage": 1.0,
+    "cost_efficiency": 0.7069,
+    "unique_gates": 9,
+    "passed_benchmarks": 5,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.0463
+  },
+  "is_valid": true,
+  "generation": 4,
+  "genes": [
+    {
+      "mr_id": "ChangeQubitOrder",
+      "params": {
+        "scramble_percentage": 0.75
+      }
+    },
+    {
+      "mr_id": "ChangeOptLevel",
+      "params": {
+        "levels": [
+          1,
+          0,
+          2
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 50
+}

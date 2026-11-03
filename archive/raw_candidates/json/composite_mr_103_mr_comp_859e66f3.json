@@ -1,0 +1,42 @@
+{
+  "id": "mr_comp_859e66f3",
+  "signature": "ChangeQubitOrder(['scramble_percentage']) -> ChangeTargetBasis(['universal_gate_sets'])",
+  "depth": 2,
+  "fitness": 0.4339,
+  "objectives": {
+    "coverage": 0.75,
+    "cost_efficiency": 0.5734,
+    "unique_gates": 6,
+    "passed_benchmarks": 5,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.0789
+  },
+  "is_valid": true,
+  "generation": 3,
+  "genes": [
+    {
+      "mr_id": "ChangeQubitOrder",
+      "params": {
+        "scramble_percentage": 1.0
+      }
+    },
+    {
+      "mr_id": "ChangeTargetBasis",
+      "params": {
+        "universal_gate_sets": [
+          {
+            "gates": [
+              "rx",
+              "ry",
+              "rz",
+              "p",
+              "cx"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 103
+}

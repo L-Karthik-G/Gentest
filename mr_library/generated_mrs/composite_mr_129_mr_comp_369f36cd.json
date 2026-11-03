@@ -1,0 +1,54 @@
+{
+  "id": "mr_comp_369f36cd",
+  "signature": "QdiffG5CZtoHCnotH(['min_to_change', 'max_to_change']) -> ChangeTargetBasis(['universal_gate_sets']) -> ChangeBackend(['available_backends'])",
+  "depth": 3,
+  "fitness": 0.3537,
+  "objectives": {
+    "coverage": 0.625,
+    "cost_efficiency": 0.3846,
+    "unique_gates": 5,
+    "passed_benchmarks": 1,
+    "novelty": 0.3333,
+    "diversity_bonus": 0.072
+  },
+  "is_valid": true,
+  "generation": 3,
+  "genes": [
+    {
+      "mr_id": "QdiffG5CZtoHCnotH",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    },
+    {
+      "mr_id": "ChangeTargetBasis",
+      "params": {
+        "universal_gate_sets": [
+          {
+            "gates": [
+              "cx",
+              "h",
+              "s",
+              "t"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "mr_id": "ChangeBackend",
+      "params": {
+        "available_backends": [
+          "aer_simulator",
+          "aer_simulator_density_matrix",
+          "statevector_simulator",
+          "aer_simulator_statevector",
+          "qasm_simulator"
+        ]
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 129
+}

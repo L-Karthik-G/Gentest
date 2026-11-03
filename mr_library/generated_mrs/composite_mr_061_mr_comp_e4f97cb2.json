@@ -1,0 +1,34 @@
+{
+  "id": "mr_comp_e4f97cb2",
+  "signature": "QdiffG3XToHSSH(['min_to_change', 'max_to_change']) -> QdiffG3XToHSSH(['min_to_change', 'max_to_change'])",
+  "depth": 2,
+  "fitness": 0.505,
+  "objectives": {
+    "coverage": 0.75,
+    "cost_efficiency": 0.7111,
+    "unique_gates": 6,
+    "passed_benchmarks": 2,
+    "novelty": 0.5,
+    "diversity_bonus": 0.0588
+  },
+  "is_valid": true,
+  "generation": 2,
+  "genes": [
+    {
+      "mr_id": "QdiffG3XToHSSH",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    },
+    {
+      "mr_id": "QdiffG3XToHSSH",
+      "params": {
+        "min_to_change": 1,
+        "max_to_change": 1
+      }
+    }
+  ],
+  "error_msg": "",
+  "index": 61
+}
